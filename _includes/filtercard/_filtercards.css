@@ -1,0 +1,130 @@
+/* filtercards - NYSDS JHK */
+.filtercards {
+    width: 100%;
+}
+.filtercard-heading {
+    font-size: 28px;
+    font-weight: bolder;
+    text-align: center;
+    margin: 25px 0px 0px;
+}
+.filtercard-list {
+    list-style-type: none;
+    padding: 20px;
+}
+.filtercard-list-item {
+    background: #ededed;
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    margin: 15px 5px;
+    border: 1px solid #d0d0ce;
+    border-radius: 15px;
+}
+.filtercard-top {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.filtercard-category {
+    font-size: 14px;
+    margin: 0px;
+    padding-bottom: 5px;
+}
+.filtercard-agency {
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    background: #457AA5;
+    color: #fff;
+    width: fit-content;
+    padding: 5px;
+    border-radius: 5px;
+}
+.filtercard-divider {
+    width: 30px;
+    border-bottom: 1px solid #d0d0ce;
+    margin:10px 0 15px;
+}
+.filtercard-link {
+    color: #004DD1;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 1.15em;
+    text-decoration: none;
+}
+.filtercard-link:hover {
+    color:#000;
+    text-decoration: underline;
+}
+.filtercard-link:focus {
+    color:#000;
+    text-decoration: underline;
+}
+.filtercard-description {
+    margin: 15px 0px 0px;
+}
+
+.filtercard-date {
+    font-size: 12px;
+    font-weight: bold;
+    margin-top: 14px;
+}
+
+/* filtercard table */
+.filter-archive {
+    width: 100%;
+    overflow-x: auto;
+    
+}
+
+.filter-archive-table {
+    border: 1px solid #000;
+    margin: 10px;
+}
+
+.filter-table-heading {
+    margin: 25px 10px;
+    font-weight: bold;
+}
+
+.filter-archive-table th {
+    border-right: 1px solid #000;
+    text-align: center;
+    padding: 5px;
+    background-color: #62666A;
+    color: #fff;
+}
+
+.filter-table-title {
+    min-width: 250px;
+}
+
+.filter-table-date {
+    min-width: 120px;
+}
+
+.filter-archive-table td {
+    border: 1px solid #000;
+    padding: 5px;
+}
+
+.filter-archive-table-row:nth-child(even) {
+    background-color: #ededed;
+}
+/* media queries */
+@media (min-width: 992px) {
+    /* filtercard */
+    .filtercards {
+        margin: 0 auto;
+    }
+
+    .filtercard-top {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .filtercard-category {
+        padding-bottom: 0;
+    }
+}

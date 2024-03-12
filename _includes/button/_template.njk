@@ -1,0 +1,24 @@
+<div class="button-container">
+    {% for button in params.buttons %}
+        {% if button.type === "button" %}
+            <button 
+                class="nysds-button" 
+                {% if button.aria %} aria-label="{{button.aria}}" {% endif %}
+                {% if button.toggle %} data-toggle="collapse" {% endif %}
+                {% if button.id %} data-target="#{{button.id}}" {% endif %}
+            >
+                {{button.title}}
+            </button>
+        {% endif %}
+
+        {%if button.type === "link" %}
+            <a 
+                href="{{button.link}}" 
+                class="nysds-button" 
+                {% if button.aria %} aria-label="{{button.aria}}" {% endif %}
+            >
+                {{button.title}}
+            </a>
+        {% endif %}
+    {% endfor %}
+</div>

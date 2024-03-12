@@ -1,0 +1,52 @@
+.global-footer {
+    background: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+    margin-top: 25px;
+}
+
+.global-logo {
+    display: block;
+    height: 50px;
+}
+
+.global-list {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.global-list li {
+    margin-top: 25px;
+}
+
+.global-links {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 25px;
+}
+
+.global-links:hover {
+    color: #FACE00;
+    text-decoration: underline;
+}
+
+.global-links:focus {
+    color: #FACE00;
+    text-decoration: underline;
+}
+
+@media (min-width: 992px) {
+    .global-footer {
+        flex-direction: row;
+    }
+    .global-list {
+        flex-direction: row;
+    }
+    .global-list li {
+        margin-top: 0;
+    }
+}

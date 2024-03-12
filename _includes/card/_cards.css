@@ -1,0 +1,94 @@
+/* cards - NYSDS JHK */
+
+.cards-container {
+    display: flex;
+    flex-direction: column;
+    margin: 50px 0px;
+    
+}
+
+.cards-heading {
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 12px;
+    width: 100%;
+    font-family: 'Figtree', sans-serif;
+}
+
+.cards-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+
+.nysds-card {
+    width: 320px;
+    margin: 1.5rem 1rem;
+    background: #ededed;
+    border: 1px solid #d0d0ce;
+    border-radius: 15px;
+}
+
+.card-image {
+    border-radius: 15px;
+    object-fit: cover;
+    height: 220px;
+    width: 100%;
+    display: block;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card-title {
+    font-size: 18px;
+    margin: 0 25px 0 0;
+    font-weight: bold;
+    font-family: 'Figtree', sans-serif;
+}
+
+.card-link {
+    color: #004DD1;
+    text-decoration: none;
+    font-family: 'Figtree', sans-serif;
+}
+
+.card-link:hover {
+    color: #000;
+    text-decoration: underline;
+}
+
+.card-link:focus {
+    color: #000;
+    text-decoration: underline;
+}
+
+.card-description {
+    font-size: 16px;
+    font-family: 'Figtree', sans-serif;
+}
+
+.cards-intro {
+    font-size: 17px;
+    margin: 15px 0px;
+    text-align: center;
+    font-family: 'Figtree', sans-serif;
+}
+
+
+/* media queries */
+@media (min-width: 992px) {
+    .cards-wrapper {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .card-content {
+        padding: 25px;
+    }
+    
+}

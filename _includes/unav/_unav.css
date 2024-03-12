@@ -1,0 +1,196 @@
+.unav-trusted-banner {
+ display:flex;
+ padding-left:27px;
+ align-items: center;
+ background: #fff;
+}
+
+.unav-trusted-banner a {
+    font-size: 11px;
+    color: #154973;
+    margin-left: 10px;
+}
+
+.unav-trusted-banner a:hover {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.unav-trusted-banner a:focus {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.unav-trusted-logo {
+    height: 20px;
+    margin: 5px
+}
+
+#unav-menu {
+    display: none;
+}
+
+.unav-hide {
+    display: none;
+}
+
+.caret-large {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: 2px;
+    vertical-align: middle;
+    border-top: 8px solid;
+    border-right: 8px solid transparent;
+    border-left: 8px solid transparent;
+    color: #000;
+}
+
+.navbar-inverse .navbar-toggle {
+    border-color: #154973;
+}
+
+.navbar-inverse .navbar-toggle:hover {
+    border-color: #fff;
+}
+
+.navbar-inverse .navbar-toggle:focus {
+    border-color: #fff;
+    background: none;
+}
+
+.navbar-default {
+    border-bottom: none;
+    background: #fff;
+    border-top: none;
+}
+
+.navbar-collapse {
+    border-top: none;
+}
+
+.navbar {
+    margin-bottom: 0;
+    border-radius: 0;
+    border: none;
+}
+
+.site-logo {
+    margin-left:40px;
+    padding: 0px;
+    z-index: 2000;
+}
+
+.site-logo img {
+    padding-right: 20px;
+    margin-right: 5px;
+    border-right: 1px solid #ccc;
+}
+
+.unav-container {
+    padding: 10px 0px;
+    height: 90px;
+    background: #fff;
+    border-bottom: none;
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+}
+
+.unav-links {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    padding-left: 30px;
+}
+
+.unav-links li {
+    padding: 10px;
+    margin: 10px;
+    font-size: 1.25em;
+    border-bottom: 1px solid #ccc;
+    margin-right: 50px;
+}
+
+.unav-links li a {
+    color: #000;
+}
+
+.unav-links li a:hover {
+    color: #0f739d;
+    text-decoration: underline;
+}
+
+.unav-links li a:focus {
+    color: #0f739d;
+    text-decoration: underline;
+}
+
+.unav-logo-link:focus { 
+    border: 1px solid #154973;
+
+}
+
+.nygov-links {
+    color: #0f739d;
+}
+
+.nygov-gold {
+    color: #FACE00;
+}
+
+@media (min-width: 992px) {
+    .navbar-toggle {
+        display: none;
+    }
+
+    .dropdown-menu {
+        width: initial;
+    }
+
+    .dropdown-menu li a {
+        margin-left: auto;
+        text-align: initial;
+    }
+
+    .row-collapse {
+        display: none !important;
+    }
+
+    .unav-links {
+        flex-direction: row;
+    }
+
+    .unav-links li {
+        border-bottom:none;
+    }
+
+    .site-logo {
+        margin-left:20px;
+    }
+
+    .site-logo img {
+        padding-right: 20px;
+        padding-left:30px;
+    }
+
+    #unav-menu {
+        display: block;
+        background: #fff;
+        margin-left: 40px;
+    }
+
+    .unav-mobile-button {
+        margin-top: 15px;
+    }
+
+    #unav-menu-mobile {
+        margin-left:30px;
+    }
+    .unav-hide {
+        display: block;
+    }
+    .unav-trusted-banner {
+        display: none;
+    }
+}

@@ -1,0 +1,19 @@
+{
+  "name": "environmentalbondact.ny.gov",
+  "version": "1.0.0",
+  "description": "Static component repository for the ArcGIS Hub Environmental Bond Act (DEC) website",
+  "main": "index.js",
+  "scripts": {
+    "test": "pa11y-ci",
+    "start": "npx @11ty/eleventy --serve",
+    "build": "npx @11ty/eleventy"
+  },
+  "keywords": [],
+  "author": "OGS Digital Service",
+  "license": "ISC",
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.1",
+    "pa11y-ci": "^3.1.0",
+    "pa11y-ci-reporter-html": "^6.0.2"
+  }
+}

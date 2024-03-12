@@ -1,0 +1,106 @@
+/* stats cards - NYSDS JHK */
+
+.stats {
+    display: flex;
+    flex-direction: column;
+    margin: 30px 0px;
+}
+
+.stats-heading {
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 12px;
+    width: 100%;
+    font-family: 'Figtree', sans-serif;
+}
+
+.stats-subhead {
+    font-size: 24px !important;
+}
+
+.stats-intro {
+    font-size: 17px;
+    margin: 15px 0px;
+    text-align: center;
+    font-family: 'Figtree', sans-serif;
+}
+
+.stats-outro {
+    font-size: 16px;
+    margin: 25px 0px;
+    text-align: center;
+    font-family: 'Figtree', sans-serif;
+}
+
+.stats-list {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin:0;
+    padding: 0;
+}
+
+.stats-card {
+    width: 260px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 10px;
+    border-radius: 15px;
+    margin: 10px;
+    white-space: nowrap;
+}
+
+.stats-blue {
+    background-color: #154973;
+    color: #fff;
+    fill: #fff;
+}
+
+.stats-gray {
+    background-color: #d0d0ce;
+    color: #000;
+    fill: #000;
+}
+
+.stats-the {
+    font-size: 2.1em;
+    font-weight: bold;
+    padding: 10px 0 10px 0;
+    margin: 0;
+    font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.stats-the-blue {
+    color: #FACE00;
+}
+
+.stats-the-gray {
+    color: #154973;
+}
+
+.stats-description {
+    font-size: 1em;
+    margin: 0px;
+    text-transform: uppercase;
+    line-height: 1.375em;
+    overflow: hidden;
+    letter-spacing: 1px;
+    font-family: Oswald;
+}
+
+/* media queries */
+@media (min-width: 992px) {
+    .stats-list {
+        flex-direction: row;
+        
+    }
+
+    .stats-card {
+        width: 23%;
+    }
+}

@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <!-- If you're reading this: help us obi-wan can-coder, you're our only hope. Apply today: ogs.ny.gov/employment -->
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="{{title}}">
+    <meta name="generator" content="11ty/eleventy">    
+    {% include '_css-link.njk' %}
+    <style>
+      .bootstrap-page-container {
+        max-width: 1170px;
+        margin: 0 auto;
+      }
+    </style>
+    <title>{{ title }}</title>
+  </head>
+  <body class="">
+  <a href="#main-site-content-for-skiplink" class="sr-only focus:not-sr-only text-blue-700 underline">Skip to Main Content</a>
+    <main class="" id="main-site-content-for-skiplink">
+      {% from '../_includes/_components.njk' import unav, global, footer  %}
+      {{ 
+        unav({})
+      }} 
+      {{ 
+        global({})
+      }} 
+      <div class="bootstrap-page-container">
+    {{ content | safe }}
+    </div>
+      {{ 
+        footer({})
+      }} 
+    </main>
+    {% include '_js-link.njk' %}
+  </body>
+</html>

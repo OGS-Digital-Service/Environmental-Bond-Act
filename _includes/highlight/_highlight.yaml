@@ -1,0 +1,28 @@
+params:
+- name: heading
+  description: frame level heading
+  required: false
+- name: cards
+  description: contains individual cards
+  required: false
+  - name: category
+    description: program category, either BIL or IRA currently
+    required: false
+  - name: agency
+    description: agency that issued the release
+    required: false
+  - name: title
+    description: link text
+    required: false
+  - name: link
+    description: the actual href link
+    required: false
+  - name: description
+    description: self explanatory
+    required: false
+  - name: date
+    description: date release was published
+    required: false
+
+
+

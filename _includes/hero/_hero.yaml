@@ -1,0 +1,13 @@
+params:
+- name: title
+  description: hero title text
+  required: true
+- name: buttons
+  description: contains buttons
+  required: false
+  - name: category
+    description: 
+    required: false
+
+
+

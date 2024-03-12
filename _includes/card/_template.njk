@@ -1,0 +1,23 @@
+<div class="cards-container">
+    <h3 class="cards-heading">{{params.heading}}</h3>
+    <p class="cards-intro">{{params.intro}}</p>
+        <div class="cards-wrapper">
+        {% for card in params.cards %}
+            <div class="nysds-card">
+                <div class="">
+                    <a href="{{card.link}}" tabindex="-1" aria-hidden="true">
+                    <img class="card-image" src="{{card.image}}" alt="{{card.imagealt}}" />
+                </a>
+                </div>
+                <div class="card-content">
+                    <h4 class="card-title">
+                        <a class="card-link" href="{{card.link}}">{{card.title}}</a>
+                    </h4>
+                    {% if cards.content %}
+                    <p class="card-description">{{card.content}}</p>
+                    {% endif %}
+                </div>
+            </div>
+        {% endfor %}
+        </div>
+</div>

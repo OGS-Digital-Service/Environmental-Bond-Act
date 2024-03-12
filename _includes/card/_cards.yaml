@@ -1,0 +1,21 @@
+params:
+- name: alert
+  type: string
+  required: false
+- name: altertlink
+  type: string
+  required: false
+- name: alertlinktitle
+  type: string
+  required: false
+- name: warning
+  type: string
+  required: false
+- name: warninglink
+  type: string
+  required: false
+- name: warninglinktitle
+  type: string
+  required: false
+
+

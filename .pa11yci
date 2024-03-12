@@ -1,0 +1,16 @@
+{
+    "defaults": {
+      "reporters": [
+        [
+          "pa11y-ci-reporter-html",
+          { "destination": "./_site/pa11y-reports", "includeZeroIssues": true }
+        ],
+        "cli"
+      ],
+      "runners": ["axe", "htmlcs"],
+      "includeNotices": false,
+      "includeWarnings": true,
+      "standard": "WCAG2AA"
+    },
+    "urls": ["https://ny.gov/"]
+  }
