@@ -4,7 +4,27 @@ title: Environmental Bond Act
 ---
 {% from './_includes/_components.njk' import filtercard, card, button, stats, highlight, hero  %}
 
-<h1> {{title}} </h1>
+
+{{ hero({
+    title:"A Hero and Page Title",
+    description:"A description that is short and impactful.",
+    image:"",
+    headline:"Theme or Topic",
+    date:"",
+    links: [
+        {
+            text:"First link",
+            link:"https://ny.gov",
+            arialabel:"link to the official website of New York State"
+        },
+        {
+            text:"Second Link",
+            link:"https://ny.gov/counties",
+            arialabel:"Link to NYS counties"
+        }
+    ]
+    })
+}}
 
 
 {{
@@ -32,6 +52,25 @@ title: Environmental Bond Act
                 link:"https://ny.gov",
                 image:"https://www.governor.ny.gov/sites/default/files/styles/hero_mobile/public/2024-01/FY2025Budgethero3.jpg",
                 imagealt:"Governor Hochul Delivering a Budget Address"
+            }
+        ]
+    })
+}}
+
+
+{{
+    button({
+        buttons:[
+            {
+                type: "button",
+                title: "Button that triggers something",
+                toggle: "",
+                id:""
+            },
+            {
+                type:"link",
+                title:"Link that goes to external resource",
+                link:"https://ny.gov/services"
             }
         ]
     })
