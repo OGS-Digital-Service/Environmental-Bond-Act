@@ -5,3 +5,34 @@ title: Environmental Bond Act
 {% from './_includes/_components.njk' import filtercard, card, button, stats, highlight, hero  %}
 
 <h1> {{title}} </h1>
+
+
+{{
+    card({
+        heading:"An example of a set of cards",
+        intro:"Descriptive text no longer than a sentence or two that is used to introduce the set of cards or a particular topic. Cards are organized into rows of three at desktop and stack at mobile.",
+        cards:[
+            {
+                title:"First Card",
+                content:"A short descriptive sentence about the topic/link of the card",
+                link:"https://ny.gov",
+                image:"https://www.governor.ny.gov/sites/default/files/styles/hero_mobile/public/2024-01/FY2025Budgethero3.jpg",
+                imagealt:"Governor Hochul Delivering a Budget Address"
+            },
+            {
+                title:"Second Card",
+                content:"A short descriptive sentence about the topic/link of the card",
+                link:"https://ny.gov",
+                image:"https://www.governor.ny.gov/sites/default/files/styles/hero_mobile/public/2024-01/FY2025Budgethero3.jpg",
+                imagealt:"Governor Hochul Delivering a Budget Address"
+            },
+            {
+                title:"Third Card",
+                content:"A short descriptive sentence about the topic/link of the card",
+                link:"https://ny.gov",
+                image:"https://www.governor.ny.gov/sites/default/files/styles/hero_mobile/public/2024-01/FY2025Budgethero3.jpg",
+                imagealt:"Governor Hochul Delivering a Budget Address"
+            }
+        ]
+    })
+}}
