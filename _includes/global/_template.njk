@@ -14,18 +14,29 @@
     <div class="collapse" id="global-navigation">
         <div class="navbar global-nav-link-container">
           <ul class="list-unstyled global-nav-links global-nav-list-desktop">
-            <li><a href="/pages/funding-opportunities" >Funding Opportunities</a></li>
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="" role="button">Funding <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="/pages/funding-opportunities">Find Funding</a></li>
+                    <li><a href="/pages/funding-overview" >Funding Overview</a></li>
+                </ul>
+            </li>
             <li><a href="/pages/projects" >Projects</a></li>
-            <li><a href="/pages/accomplishments" >Accomplishments</a></li>
-            <li><a href="/pages/resources" >Resources</a></li>
-            <li><a href="/pages/news" >News</a></li>
+            <li><a href="/pages/priorities" >Priorities</a></li>
+            <li><a href="/pages/news-resources">News & Resources</a></li>
+            
           </ul>
           <ul class="list-unstyled global-nav-links global-nav-list-mobile">
-            <li><a href="/pages/funding-opportunities" data-toggle="collapse" data-target="#global-navigation">Funding Opportunities</a></li>
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="" role="button">Funding <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="/pages/funding-opportunities" data-toggle="collapse" data-target="#global-navigation">Find Funding</a></li>
+                    <li><a href="/pages/funding-overview" data-toggle="collapse" data-target="#global-navigation">Funding Overview</a></li>
+                </ul>
+            </li>
             <li><a href="/pages/projects" data-toggle="collapse" data-target="#global-navigation">Projects</a></li>
-            <li><a href="/pages/accomplishments" data-toggle="collapse" data-target="#global-navigation">Accomplishments</a></li>
-            <li><a href="/pages/resources" data-toggle="collapse" data-target="#global-navigation">Resources</a></li>
-            <li><a href="/pages/news" data-toggle="collapse" data-target="#global-navigation">News</a></li>
+            <li><a href="/pages/priorities" data-toggle="collapse" data-target="#global-navigation">Priorities</a></li>
+            <li><a href="/pages/news-resources" data-toggle="collapse" data-target="#global-navigation">News & Resources</a></li>
           </ul>
           
         </div>
