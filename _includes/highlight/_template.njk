@@ -1,4 +1,4 @@
-<div class="highlight-container bg-yellow">
+<div class="highlight-container">
     {% if params.title or params.heading %}
         <h2 class="highlight-h2">
             {%if params.title %}
@@ -22,7 +22,9 @@
                 {%if card.description%}
                     <p class="button-card-description">{{card.description}}</p>
                 {% endif %}
+                {%if card.link%}
                     <a href="{{card.link}}" class="highlight-link">{{card.linktext}}</a>
+                {% endif %}
             </div>
             {%endfor%}
         </div>

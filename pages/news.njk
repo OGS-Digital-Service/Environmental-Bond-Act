@@ -1,0 +1,216 @@
+---
+layout: layout.njk
+title: News
+---
+{% from '../_includes/_components.njk' import filtercard, card, button, stats, highlight, hero  %}
+
+
+{{ hero({
+    title:"News",
+    description:"A description that is short and impactful. Background images for this hero are available for embedding in ArcGIS hub.",
+    image:"",
+    headline:"EBA"
+    })
+}}
+
+
+
+{{
+    filtercard({
+        heading:"NY.gov Filter Style Cards",
+        archive: false,
+        cards:[
+            {
+                category:"IRA",
+                agency:"Environmental Protection Agency (EPA)",
+                title:"Biden-Harris Administration Announces Proposed Rule to Reduce Wasteful Methane Emissions from the Oil and Gas Sector to Drive Innovation and Protect Communities",
+                link:"https://www.epa.gov/newsreleases/biden-harris-administration-announces-proposed-rule-reduce-wasteful-methane-emissions",
+                description:"On January 12th, the EPA announced a proposed rule to tackle wasteful methane emissions from the oil and gas sector, delivering on Congress’ directive in the Inflation Reduction Act to incentivize adoption of industry best practices that reduce pollution.",
+                date:"Jan 12, 2024" 
+            }
+        ]
+    })
+}}
+
+
+
+{{
+    button({
+        buttons:[
+            {
+                type: "button",
+                title: "Archive News",
+                toggle: "true",
+                id:"demo"
+            }
+        ]
+    })
+}}
+
+<div class="collapse" id="demo">
+{{
+    filtercard({
+        heading:"Archive Announcements",
+        archive: true,
+        cards:[
+            {
+                category:"BIL",
+                agency:"U.S. Department of the Interior",
+                title:"Biden-Harris Administration Announces More Than $157 Million from Investing in America Agenda to Restore Our Nation’s Lands and Waters",
+                link:"https://www.doi.gov/pressreleases/biden-harris-administration-announces-more-157-million-investing-america-agenda",
+                description:"",
+                date:"Feb 08, 2024" 
+            },
+            {
+                category:"BIL",
+                agency:"U.S. Department of the Interior",
+                title:"Acting Deputy Secretary Daniel-Davis Announces $138 Million from President’s Investing in America Agenda for Wildland Fire Mitigation and Resilience",
+                link:"https://www.doi.gov/pressreleases/acting-deputy-secretary-daniel-davis-announces-138-million-presidents-investing",
+                description:"",
+                date:"Jan 09, 2024" 
+            },
+            {
+                category:"BIL",
+                agency:"U.S. Environmental Protection Agency (EPA)",
+                title:"Biden-Harris Administration announces nearly $69 million in awards for clean school buses across New York as part of Investing in America Agenda",
+                link:"https://www.epa.gov/newsreleases/biden-harris-administration-announces-nearly-69-million-awards-clean-school-buses",
+                description:"",
+                date:"Jan 08, 2024" 
+            },
+            {
+                category:"BIL",
+                agency:"Governor",
+                title:"Governor Hochul Highlights Significant Progress in Revitalizing New York State’s Roads and Bridges in 2023",
+                link:"https://www.governor.ny.gov/news/governor-hochul-highlights-significant-progress-revitalizing-new-york-states-roads-and-bridges",
+                description:"",
+                date:"Jan 01, 2023" 
+            },
+            {
+                category:"IRA",
+                agency:"Housing and Urban Development (HUD)",
+                title:"Biden-Harris Administration Announces $174 Million to Support Energy Efficiency and Climate Resilience for Thousands of Low-Income Households as Part of Investing in America Agenda",
+                link:"https://www.hud.gov/press/press_releases_media_advisories/HUD_No_23_284",
+                description:"",
+                date:"Dec 21, 2023" 
+            },
+             {
+                category:"IRA",
+                agency:"Governor",
+                title:"Governor Hochul Announces $8 Million Awarded to New York State Under Inflation Reduction Act to Reduce Methane Emissions From Oil and Gas Wells",
+                link:"https://www.governor.ny.gov/news/governor-hochul-announces-8-million-awarded-new-york-state-under-inflation-reduction-act",
+                description:"",
+                date:"Dec 21, 2023" 
+            },
+            {
+                category:"IRA",
+                agency:"Environmental Protection Agency (EPA)",
+                title:"Biden-Harris Administration Selects Fordham University to Receive $50 Million to Fund Environmental Justice Projects Across EPA Region 2 as Part of Investing in America Agenda",
+                link:"https://www.epa.gov/newsreleases/biden-harris-administration-selects-fordham-university-receive-50-million-fund",
+                description:"",
+                date:"Dec 20, 2023" 
+            },
+            {
+                category:"BIL",
+                agency:"U.S. Department of Transportation (DOT)",
+                title:"Biden-Harris Administration Invests $66 Million in Bipartisan Infrastructure Law Funding for Airport Improvements Across the Country",
+                link:"https://www.transportation.gov/briefing-room/biden-harris-administration-invests-66-million-bipartisan-infrastructure-law-funding",
+                description:"",
+                date:"Dec 19, 2023" 
+            },
+            {
+                category:"BIL",
+                agency:"Governor",
+                title:"Governor Hochul Announces Thruway Authority Award to Develop Comprehensive Safety Action Plan to Improve Roadway Safety",
+                link:"https://www.governor.ny.gov/news/governor-hochul-announces-thruway-authority-award-develop-comprehensive-safety-action-plan",
+                description:"",
+                date:"Dec 18, 2023" 
+            },
+            {
+                category:"BIL",
+                agency:"Governor",
+                title:"Governor Hochul Announces New York’s First National Electric Vehicle Infrastructure Funded Fast Charging Station Now Operating in the Hudson Valley",
+                link:"https://www.governor.ny.gov/news/governor-hochul-announces-new-yorks-first-national-electric-vehicle-infrastructure-funded-fast",
+                description:"",
+                date:"Dec 15, 2023" 
+            },
+            {
+                category:"BIL",
+                agency:"U.S. Department of Transportation (DOT)",
+                title:"Biden-Harris Administration Celebrates Opening of Nation’s First NEVI-Funded EV Charging Stations in Ohio and New York",
+                link:"https://www.transportation.gov/briefing-room/biden-harris-administration-celebrates-opening-nations-first-nevi-funded-ev-charging",
+                description:"",
+                date:"Dec 15, 2023" 
+            },
+            {
+                category:"IRA",
+                agency:"Environmental Protection Agency (EPA)",
+                title:"Biden-Harris Administration Announces $350 Million to 14 States to Reduce Methane Emissions from Oil and Gas Sector as Part of Investing in America Agenda",
+                link:"https://www.epa.gov/newsreleases/biden-harris-administration-announces-350-million-14-states-reduce-methane-emissions",
+                description:"",
+                date:"Dec 15, 2023" 
+            },
+            {
+                category:"BIL",
+                agency:"The White House",
+                title:"Biden-⁠Harris Administration Takes Action to Accelerate America’s Clean Transportation Future",
+                link:"https://www.whitehouse.gov/briefing-room/statements-releases/2023/12/14/fact-sheet-biden-harris-administration-takes-action-to-accelerate-americas-clean-transportation-future/",
+                description:"",
+                date:"Dec 14, 2023" 
+            },
+            {
+                category:"BIL",
+                agency:"U.S. Department of Transportation (DOT)",
+                title:"Biden-Harris Administration Investing in Hundreds of American Communities to Improve Safety and Prevent Roadway Deaths",
+                link:"https://www.transportation.gov/briefing-room/biden-harris-administration-investing-hundreds-american-communities-improve-safety",
+                description:"",
+                date:"Dec 13, 2023" 
+            },
+            {
+                category:"IRA",
+                agency:"Governor",
+                title:"Governor Hochul Announces New $45 Million Apprenticeship and Pre-Apprenticeship Clean Energy Training Initiative",
+                link:"https://www.governor.ny.gov/news/governor-hochul-announces-new-45-million-apprenticeship-and-pre-apprenticeship-clean-energy",
+                description:"",
+                date:"Dec 12, 2023" 
+            },
+            {
+                category:"BIL",
+                agency:"The White House",
+                title:"President Biden Announces Billions to Deliver World-Class High-Speed Rail and Launch New Passenger Rail Corridors Across the Country",
+                link:"https://www.whitehouse.gov/briefing-room/statements-releases/2023/12/08/fact-sheet-president-biden-announces-billions-to-deliver-world-class-high-speed-rail-and-launch-new-passenger-rail-corridors-across-the-country/",
+                description:"",
+                date:"Dec 08, 2023" 
+            },
+            {
+                category:"BIL",
+                agency:"Environmental Protection Agency",
+                title:"Biden-Harris Administration Announces Major Grant to Recruit and Train Harlem, New York Workers for Community Revitalization and Cleanup Projects as Part of Investing in America Agenda",
+                link:"https://www.epa.gov/newsreleases/biden-harris-administration-announces-major-grant-recruit-and-train-harlem-new-york",
+                description:"",
+                date:"Dec 08, 2023" 
+            },
+            {
+                category:"BIL",
+                title:"Governor Hochul Announces $164 Million for Local Water Infrastructure Projects",
+                link:"https://www.governor.ny.gov/news/governor-hochul-announces-164-million-local-water-infrastructure-projects",
+                date: "Dec 07, 2023",
+                agency:"Governor"
+            },
+            {
+                category:"BIL",
+                title:"Governor Hochul Announces $100 Million in Federal Funding Now Available for High-speed Broadband Infrastructure Through Affordable Housing Connectivity Program",
+                link:"https://www.governor.ny.gov/news/governor-hochul-announces-100-million-federal-funding-now-available-high-speed-broadband",
+                date: "Dec 06, 2023",
+                agency:"Governor"
+            },
+            {
+                category:"BIL",
+                title:"Biden Administration Announces More Than $300 Million Available to Make Transit Stations Accessible for All",
+                link:"https://www.transportation.gov/briefing-room/biden-administration-announces-more-300-million-available-make-transit-stations",
+                date: "Dec 01, 2023",
+                agency:"U.S. Department of Transportation (DOT)"
+            }
+        ]
+    })
+}}
+</div>
