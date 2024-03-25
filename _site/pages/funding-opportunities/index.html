@@ -1031,6 +1031,90 @@
     }
 }
 
+/* category tiles - NYSDS JHK */
+
+.category {
+    display: flex;
+    flex-direction: column;
+    margin: 30px 0px;
+}
+
+.category-heading {
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 12px;
+    width: 100%;
+    font-family: 'Figtree', sans-serif;
+}
+
+.category-subhead {
+    font-size: 24px !important;
+}
+
+.category-intro {
+    font-size: 17px;
+    margin: 15px 0px;
+    text-align: center;
+    font-family: 'Figtree', sans-serif;
+}
+
+.category-list {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin:0;
+    padding: 0;
+}
+
+.category-tile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    align-self: stretch;
+    width: 250px;
+    border-radius: 15px;
+    margin: 10px;
+    background-color: #154973;
+    
+}
+
+.category-link {
+    height: 100%;
+    width: 100%;
+    align-content: center;
+    padding: 50px 20px;
+    font-size: 1em;
+    font-weight: bold;
+    text-decoration: none !important;
+    color: #fff;
+    border-radius: 15px;
+    
+}
+
+.category-link:hover {
+    background-color: #000;
+    color: #fff;
+    text-decoration: underline !important;
+}
+
+.category-link:focus {
+    background-color: #000;
+    color: #fff;
+    text-decoration: underline !important;
+}
+
+/* media queries */
+@media (min-width: 992px) {
+    .category-tile {
+        flex: 1;
+        width: 25%;
+    }
+}
 </style>
 
 

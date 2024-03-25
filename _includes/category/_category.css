@@ -1,15 +1,3 @@
-
-    
-<style>
-
-
-
-
-
-
-
-
-
 /* category tiles - NYSDS JHK */
 
 .category {
@@ -94,37 +82,3 @@
         width: 25%;
     }
 }
-</style>
-
-
-
-
-
-
-
-
-<div class="category-tiles">
-    
-    <h3 class="category-heading"> Bond Act Priorities</h3>
-    
-    
-    <ul class="category-list">
-        
-            <li class="category-tile">
-                <a href="#justice" class="category-link">Advancing Environmental Justice</a>
-            </li>
-        
-            <li class="category-tile">
-                <a href="#climate" class="category-link">Mitigating Climate Change</a>
-            </li>
-        
-            <li class="category-tile">
-                <a href="#jobs" class="category-link">Creating Jobs</a>
-            </li>
-        
-            <li class="category-tile">
-                <a href="#resources" class="category-link">Protecting Natural Resources</a>
-            </li>
-        
-    </ul>
-</div>

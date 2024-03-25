@@ -2,7 +2,7 @@
 layout: layout.njk
 title: Environmental Bond Act 
 ---
-{% from './_includes/_components.njk' import filtercard, card, button, stats, highlight, hero  %}
+{% from './_includes/_components.njk' import filtercard, card, button, stats, highlight, hero, category  %}
 
 
 {{ hero({
@@ -56,7 +56,34 @@ title: Environmental Bond Act
     })
 }}
 
-
+{{
+    category({
+        heading:"Testing",
+        intro:"Short section of descriptive text",
+        tiles:[
+            {
+                link:"https://ny.gov",
+                linktext:"Advancing Environmental Justice",
+                color:"blue"
+            },
+            {
+                link:"https://ny.gov",
+                linktext:"Advancing Environmental Justice",
+                color:"blue"
+            },
+            {
+                link:"https://ny.gov",
+                linktext:"Advancing Environmental Justice",
+                color:"blue"
+            },
+            {
+                link:"https://ny.gov",
+                linktext:"Advancing Environmental Justice",
+                color:"blue"
+            }
+        ]
+    })
+}}
 
 
 {{

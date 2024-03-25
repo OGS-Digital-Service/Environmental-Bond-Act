@@ -2,17 +2,18 @@
 layout: render-layout.njk
 title: Funding Opportunities
 ---
-{% from './_includes/_components.njk' import filtercard, card, button, stats, highlight, hero  %}
+{% from './_includes/_components.njk' import filtercard, card, button, stats, highlight, hero, category  %}
 <style>
-{# {% include '../_includes/button/_button.css'  %}
-{% include './_includes/card/_cards.css'  %}
-{% include './_includes/filtercard/_filtercards.css'  %}
-{% include './_includes/global/_global.css'  %}
-{% include './_includes/unav/_unav.css'  %}
-{% include './_includes/stats/_stats.css'  %}
-{% include './_includes/footer/_footer.css'  %}
-{% include './_includes/highlight/_highlight.css'  %} #}
-{% include './_includes/hero/_hero.css'  %}
+{# {% include './_includes/button/_button.css'  %} #}
+{# {% include './_includes/card/_cards.css'  %} #}
+{# {% include './_includes/filtercard/_filtercards.css'  %} #}
+{# {% include './_includes/global/_global.css'  %} #}
+{# {% include './_includes/unav/_unav.css'  %} #}
+{# {% include './_includes/stats/_stats.css'  %} #}
+{# {% include './_includes/footer/_footer.css'  %} #}
+{# {% include './_includes/highlight/_highlight.css'  %}  #}
+{# {% include './_includes/hero/_hero.css'  %} #}
+{% include './_includes/category/_category.css'  %}
 </style>
 
 {# {{ hero({
@@ -35,10 +36,42 @@ title: Funding Opportunities
     })
 }} #}
 
-{{ hero({
+{# {{ hero({
     title:"Program Priorities",
     description:"",
     image:"https://www.ny.gov/sites/default/files/styles/hero_wide/public/2023-02/outdoors_family_nyc_bridge_environment_1280.jpg?h=b5f6a62e&itok=dbAWmV3E",
     headline:"Environmental Bond Act"
+    })
+}} #}
+
+
+
+
+{{
+    category({
+        heading:"Bond Act Priorities",
+        intro:"",
+        tiles:[
+            {
+                link:"#justice",
+                linktext:"Advancing Environmental Justice",
+                color:"blue"
+            },
+            {
+                link:"#climate",
+                linktext:"Mitigating Climate Change",
+                color:"blue"
+            },
+            {
+                link:"#jobs",
+                linktext:"Creating Jobs",
+                color:"blue"
+            },
+            {
+                link:"#resources",
+                linktext:"Protecting Natural Resources",
+                color:"blue"
+            }
+        ]
     })
 }}

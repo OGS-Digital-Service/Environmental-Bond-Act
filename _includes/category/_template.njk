@@ -1,0 +1,15 @@
+<div class="category-tiles">
+    {% if params.heading %}
+    <h3 class="category-heading"> {{params.heading}}</h3>
+    {% endif %}
+    {% if params.intro %}
+    <p class="category-intro">{{params.intro}}</p>
+    {% endif %}
+    <ul class="category-list">
+        {% for tile in params.tiles %}
+            <li class="category-tile">
+                <a href="{{tile.link}}" class="category-link">{{tile.linktext}}</a>
+            </li>
+        {% endfor %}
+    </ul>
+</div>
