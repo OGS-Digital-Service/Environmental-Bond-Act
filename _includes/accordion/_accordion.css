@@ -1,0 +1,35 @@
+/* puuuush button - NYSDS JHK */
+.button-container {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px 0;
+    justify-content: center;
+}
+.nysds-button {
+    background: #154973;
+    padding:15px;
+    margin: 10px 25px;
+    border-radius: 15px;
+    color: #fff;
+    min-width: 250px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+    display: block;
+    text-decoration: none;
+    appearance: none;
+    border: none;
+}
+
+.nysds-button:hover {
+    background:#000;
+    color:#fff;
+    text-decoration: underline;
+}
+
+.nysds-button:focus {
+    background:#000;
+    color:#fff;
+    text-decoration: underline;
+}

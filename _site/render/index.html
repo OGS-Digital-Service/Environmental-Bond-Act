@@ -7,295 +7,151 @@
 
 
 
-/* stats cards - NYSDS JHK */
 
-.stats {
+
+.highlight-container {
     display: flex;
     flex-direction: column;
-    margin: 30px 0px;
-}
-
-.stats-heading {
-    font-size: 36px;
-    font-weight: bold;
-    text-align: center;
-    margin-bottom: 12px;
     width: 100%;
-    font-family: 'Figtree', sans-serif;
+    padding-bottom: 35px;
 }
 
-.stats-subhead {
-    font-size: 24px !important;
+.highlight-h2 {
+    padding-top: 35px;
+    display: block;
+    width: 100%;
 }
 
-.stats-intro {
-    font-size: 17px;
-    margin: 15px 0px;
+.highlight-title {
+    font-family: Oswald, sans-serif;
+    font-size: 0.55em;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: block;
     text-align: center;
-    font-family: 'Figtree', sans-serif;
+    padding-bottom: 15px;
 }
 
-.stats-outro {
+.highlight-heading {
+    font-family: 'Figtree', sans-serif;
+    font-size: 1.05em;
+    font-weight: bold;
+    display: block;
+    text-align: center;
+    color: #154973;
+    margin-bottom: 20px;
+}
+
+.highlight-description {
+    text-align: center;
     font-size: 16px;
-    margin: 25px 0px;
-    text-align: center;
-    font-family: 'Figtree', sans-serif;
 }
 
-.stats-list {
-    list-style-type: none;
+.highlight-cards {
     display: flex;
-    align-items: center;
-    justify-content: center;
     flex-wrap: wrap;
-    margin:0;
-    padding: 0;
+    justify-content: center;
 }
 
-.stats-card {
-    width: 260px;
+.button-card {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 20px 10px;
-    border-radius: 15px;
-    margin: 10px;
-    text-align: center;
-    min-height: 210px;
+    max-width: 275px;
+    margin: 15px 30px;
 }
 
-.stats-cta {
-    color: #fff;
-    background-color: #154973;
-    font-weight: bold;
-    margin: 0 auto;
-    min-width: 250px;
-    text-align: center;
-    padding:15px;
-    border-radius: 15px;
-    text-decoration: none !important;
-    text-transform: uppercase;
-    margin-top: 30px;
-}
-
-.stats-cta:hover {
-    background-color: #000;
-    color: #fff;
-    text-decoration: underline !important;
-} 
-
-.stats-cta:focus {
-    background-color: #000;
-    color: #fff;
-    text-decoration: underline !important;
-} 
-
-.stats-blue {
-    background-color: #154973;
-    color: #fff;
-    fill: #fff;
-}
-
-.stats-gray {
-    background-color: #d0d0ce;
+.button-card-heading {
     color: #000;
-    fill: #000;
-}
-
-.stats-the {
-    font-size: 2.1em;
     font-weight: bold;
-    padding: 10px 0 10px 0;
-    margin: 0;
-    font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 1.5em;
+    text-align: center;
+    margin-bottom: 15px;
 }
 
-.stats-the-blue {
-    color: #FACE00;
+.button-card-description {
+    text-align: center;
+    min-height: 100px;
 }
 
-.stats-the-gray {
-    color: #154973;
-}
-
-.stats-description {
-    font-size: 1em;
-    margin: 0px;
+.highlight-link {
+    text-decoration: none !important;
+    min-width: 250px;
+    padding: 15px;
+    border: 1px solid #000;
+    border-radius: 15px;
+    text-align: center;
     text-transform: uppercase;
-    line-height: 1.375em;
-    overflow: hidden;
-    letter-spacing: 1px;
-    font-family: Oswald;
+    font-weight: bold;
+    color:#000;
+    margin: 20px 0px;
 }
 
-/* media queries */
-@media (min-width: 992px) {
-    .stats-list {
-        flex-direction: row;
-    }
+.highlight-link:hover {
+    background-color: #000;
+    color: #fff;
+    border: 1px solid #fff;
+    text-decoration: underline !important;
+}
 
-    .stats-card {
-        width: 23%;
-    }
-} 
-
-
+.highlight-link:focus {
+    background-color: #000;
+    color: #fff;
+    border: 1px solid #fff;
+    text-decoration: underline !important;
+}  
 
 
 </style>
 
 
-<div class="stats">
-    
-    <h3 class="stats-heading
-         
-    "> Bond Act Funding</h3>
-    
-    <p class="stats-intro"></p>
-    <ul class="stats-list">
-        
-            <li class="stats-card 
-                         stats-blue  
-                         
-                        ">
-                <div class="stats-icon
-                         stats-blue  
-                         
-                        ">
-                    <svg version="1.1" aria-hidden="true" height="97" width="97" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                        viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve">
-                    <path class="st0" d="M16.76,88.35l-6.6-6.6c-4.11-4.11-4.11-10.85,0-14.96l0.59-0.59c4.11-4.11,10.85-4.11,14.96,0l6.6,6.6
-                        L16.76,88.35z"/>
-                    <line class="st0" x1="23.11" y1="87.22" x2="28.34" y2="92.45"/>
-                    <line class="st0" x1="31.19" y1="79.15" x2="36.41" y2="84.37"/>
-                    <path class="st0" d="M36.45,53.95c5.64,13.82,20.82,21,24.47,19.13s9.06-13.52,3.42-27.34s-15.55-5.84-24.6-22.38
-                        C39.74,23.36,30.81,40.14,36.45,53.95z"/>
-                    <path class="st0" d="M10.27,66.75c-2.06-5.02-3.19-10.52-3.19-16.28C7.08,26.77,26.3,7.55,50,7.55s42.92,19.22,42.92,42.92
-                        c0,14.47-7.16,27.26-18.13,35.04c0,0-13.8,9.75-14.33-4.85c-0.25-6.97-2.35-13.94-2.35-13.94s-4.29-16.17-12.8-21.59"/>
-                    </svg>
-                </div>
-                
-                <p class="stats-description">
-                    Climate Change Mitigation
-                </p>
-                
-            </li>
-        
-            <li class="stats-card 
-                         stats-blue  
-                         
-                        ">
-                <div class="stats-icon
-                         stats-blue  
-                         
-                        ">
-                    <svg version="1.1" aria-hidden="true" height="97" width="97" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                        viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve">
-                                        <style type="text/css">
-                        .st0{fill:none;stroke:#fff;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
-                    </style>
-                    <g>
-                        <path class="st0" d="M16.67,63.48c5.55,0,5.55,6.71,11.1,6.71c5.55,0,5.55-6.71,11.1-6.71c5.55,0,5.55,6.71,11.11,6.71
-                            c5.55,0,5.55-6.71,11.11-6.71c5.55,0,5.55,6.71,11.11,6.71c5.56,0,5.56-6.71,11.11-6.71s5.56,6.71,11.11,6.71"/>
-                        <path class="st0" d="M5.57,70.18c5.56,0,5.56-6.71,11.11-6.71s5.56,6.71,11.11,6.71"/>
-                    </g>
-                    <g>
-                        <path class="st0" d="M16.67,74.53c5.55,0,5.55,6.71,11.1,6.71c5.55,0,5.55-6.71,11.1-6.71c5.55,0,5.55,6.71,11.11,6.71
-                            c5.55,0,5.55-6.71,11.11-6.71c5.55,0,5.55,6.71,11.11,6.71c5.56,0,5.56-6.71,11.11-6.71s5.56,6.71,11.11,6.71"/>
-                        <path class="st0" d="M5.57,81.24c5.56,0,5.56-6.71,11.11-6.71s5.56,6.71,11.11,6.71"/>
-                    </g>
-                    <path class="st0" d="M94.43,51.91c-22.96,7.35-43.49-6.5-36.96-19.55c5.4-10.79,17.75,2.41,17.75,2.41S57.92,3.24,36.3,25.75
-                        C20.88,41.8,24.85,55.13,5.57,55.13"/>
-                    </svg>
-                </div>
-                
-                <p class="stats-description">
-                    Restoration and Flood Risk
-                </p>
-                
-            </li>
-        
-            <li class="stats-card 
-                         stats-blue  
-                         
-                        ">
-                <div class="stats-icon
-                         stats-blue  
-                         
-                        ">
-                    <svg version="1.1" aria-hidden="true" height="97" width="97" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                        viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve">
-                    <g>
-                        <path class="st0" d="M82.5,81.46L82.5,81.46L74.2,67.07l-8.31,14.39h0c-0.73,1.34-1.14,2.88-1.14,4.51c0,5.22,4.23,9.45,9.45,9.45
-                            s9.45-4.23,9.45-9.45C83.65,84.33,83.23,82.8,82.5,81.46z"/>
-                        <path class="st0" d="M68.62,84.75c0,3.57,2.9,6.47,6.47,6.47"/>
-                        <path class="st0" d="M13.07,37.51h44.35c4.56,0,8.29,3.73,8.29,8.29v8.63h-3.29c-1.41,0-2.56,1.15-2.56,2.56
-                            c0,1.41,1.15,2.56,2.56,2.56h21.96c1.41,0,2.56-1.15,2.56-2.56c0-1.41-1.15-2.56-2.56-2.56h-2.1V45.8
-                            c0-13.71-11.15-24.86-24.86-24.86H13.07"/>
-                        <path class="st0" d="M51.48,3.5c-1.51,0-2.83,0.8-3.58,1.99H23.77C23.02,4.3,21.7,3.5,20.18,3.5c-2.34,0-4.25,1.9-4.25,4.25
-                            c0,2.34,1.9,4.25,4.25,4.25c1.51,0,2.83-0.8,3.58-1.99H47.9c0.75,1.19,2.07,1.99,3.58,1.99c2.34,0,4.25-1.9,4.25-4.25
-                            C55.73,5.4,53.82,3.5,51.48,3.5z"/>
-                        
-                            <rect x="30.46" y="13.31" transform="matrix(-1.836970e-16 1 -1 -1.836970e-16 51.3976 -20.2661)" class="st0" width="10.75" height="4.51"/>
-                    </g>
-                    </svg>
-                </div>
-                
-                <p class="stats-description">
-                    Water Quality Improvement and Resilient Infrastructure
-                </p>
-                
-            </li>
-        
-            <li class="stats-card 
-                         stats-blue  
-                         
-                        ">
-                <div class="stats-icon
-                         stats-blue  
-                         
-                        ">
-                    <svg version="1.1" aria-hidden="true" height="97" width="97" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                        viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve">
-                    <path class="st0" d="M12.41,94.49h63.86c-7.15-8.25-18.79-13.63-31.93-13.63S19.56,86.23,12.41,94.49z"/>
-                    <path class="st0" d="M65.67,94.49h29.45V76.71c-3.18-1.04-6.63-1.62-10.25-1.62c-9.21,0-17.38,3.7-22.5,9.41"/>
-                    <path class="st0" d="M44.68,80.86c-3.75-9.26-14.25-15.94-26.62-15.94c-4.2,0-8.18,0.77-11.75,2.15v27.41h13.81"/>
-                    <path class="st0" d="M45.11,94.49h50.01V65.66c-7.03-5.97-16.82-9.68-27.64-9.68c-13.26,0-24.96,5.55-31.95,14.02"/>
-                    <circle class="st0" cx="74.05" cy="25.17" r="8.51"/>
-                    <line class="st0" x1="74.05" y1="38.45" x2="74.05" y2="43.6"/>
-                    <line class="st0" x1="74.05" y1="6.74" x2="74.05" y2="11.89"/>
-                    <line class="st0" x1="60.77" y1="25.17" x2="55.63" y2="25.17"/>
-                    <line class="st0" x1="92.48" y1="25.17" x2="87.34" y2="25.17"/>
-                    <line class="st0" x1="64.66" y1="34.56" x2="61.02" y2="38.2"/>
-                    <line class="st0" x1="87.08" y1="12.14" x2="83.45" y2="15.78"/>
-                    <line class="st0" x1="64.66" y1="15.78" x2="61.02" y2="12.14"/>
-                    <line class="st0" x1="87.08" y1="38.2" x2="83.45" y2="34.56"/>
-                    <path class="st0" d="M33.84,42.28c0,5.92-4.8,10.72-10.72,10.72s-10.72-4.8-10.72-10.72s4.8-18.14,10.72-18.14
-                        S33.84,36.37,33.84,42.28z"/>
-                    <line class="st0" x1="23.12" y1="37.33" x2="23.12" y2="65.31"/>
-                    <line class="st0" x1="23.12" y1="46.28" x2="18.67" y2="40.92"/>
-                    <line class="st0" x1="23.12" y1="46.28" x2="27.49" y2="41.01"/>
-                    </svg>
-                </div>
-                
-                <p class="stats-description">
-                    Open Space Land Conservation and Recreation
-                </p>
-                
-            </li>
-        
-    </ul>
 
-    
 
+<div class="highlight-container">
     
-    <a href="/pages/funding-overview" class="stats-cta"> Funding Overview </a>
+        <h2 class="highlight-h2">
+            
+                <span class="highlight-title"> Next Steps </span>
+            
+            
+        </h2>
     
-
+    
+    
+        <div class="highlight-cards">
+            
+            <div class="button-card">
+                
+                    <h3 class="button-card-heading">Reviewing Feedback</h3>
+                
+                
+                    <p class="button-card-description">Multi-agency State working groups are reviewing the feedback received through the Environmental Bond Act Listening Tour and Project Ideas Survey to help identify needs for environmental funding and develop program logistics for Bond Act implementation. </p>
+                
+                
+            </div>
+            
+            <div class="button-card">
+                
+                    <h3 class="button-card-heading">Public Comment Opportunities </h3>
+                
+                
+                    <p class="button-card-description">As State agencies and authorities develop grant opportunities, eligibility guidelines will be published for public comment to fine tune programs to deliver Bond Act funds to communities. </p>
+                
+                
+            </div>
+            
+            <div class="button-card">
+                
+                    <h3 class="button-card-heading">Ensuring Transparency </h3>
+                
+                
+                    <p class="button-card-description">As Bond Act funds are distributed, the State will work with stakeholders to ensure a transparent process that enables New Yorkers to see what is funded. </p>
+                
+                
+            </div>
+            
+        </div>
+    
 </div>
-
-
 
 
 
