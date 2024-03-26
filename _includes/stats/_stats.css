@@ -52,8 +52,35 @@
     padding: 20px 10px;
     border-radius: 15px;
     margin: 10px;
-    white-space: nowrap;
+    text-align: center;
+    min-height: 210px;
 }
+
+.stats-cta {
+    color: #fff;
+    background-color: #154973;
+    font-weight: bold;
+    margin: 0 auto;
+    min-width: 250px;
+    text-align: center;
+    padding:15px;
+    border-radius: 15px;
+    text-decoration: none !important;
+    text-transform: uppercase;
+    margin-top: 30px;
+}
+
+.stats-cta:hover {
+    background-color: #000;
+    color: #fff;
+    text-decoration: underline !important;
+} 
+
+.stats-cta:focus {
+    background-color: #000;
+    color: #fff;
+    text-decoration: underline !important;
+} 
 
 .stats-blue {
     background-color: #154973;
@@ -97,7 +124,6 @@
 @media (min-width: 992px) {
     .stats-list {
         flex-direction: row;
-        
     }
 
     .stats-card {

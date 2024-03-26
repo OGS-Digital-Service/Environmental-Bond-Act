@@ -17,12 +17,14 @@
                         ">
                     {{card.icon | safe }}
                 </div>
+                {% if card.stat %}
                 <h4 class="stats-the
                         {% if card.color === "blue" %} stats-the-blue {% endif %} 
                         {% if card.color === "gray" %} stats-the-gray {% endif %} 
                         ">
                     {{card.stat}}
                 </h4>
+                {% endif %}
                 <p class="stats-description">
                     {{card.description}}
                 </p>
