@@ -1,24 +1,22 @@
-<div class="button-container">
-    {% for button in params.buttons %}
-        {% if button.type === "button" %}
-            <button 
-                class="nysds-button" 
-                {% if button.aria %} aria-label="{{button.aria}}" {% endif %}
-                {% if button.toggle %} data-toggle="collapse" {% endif %}
-                {% if button.id %} data-target="#{{button.id}}" {% endif %}
-            >
-                {{button.title}}
+{% if params.headline %}
+        <h3 class="accordion-headline">{{params.headline}}</h3>
+    {% endif %}
+<div class="accordion">
+    {% for item in params.items %}
+            <button class="accordion-button" 
+                    data-toggle="collapse" 
+                    data-target="#{{item.target}}">
+                {{item.title}}
+                <span class="accordion-button-icon" aria-hidden="true"></span>
             </button>
-        {% endif %}
-
-        {%if button.type === "link" %}
-            <a 
-                href="{{button.link}}" 
-                class="nysds-button" 
-                {% if button.aria %} aria-label="{{button.aria}}" {% endif %}
-            >
-                {{button.title}}
-            </a>
-        {% endif %}
+            <div class="accordion-item collapse" id="{{item.target}}">
+                <p class="accordion-description">
+                    {{item.description}}
+                    {% if item.ctalink %}
+                        <a href="{{item.ctalink}}" class="accordion-cta">{{item.ctatext}}<span class="accordion-cta-arrow" aria-hidden="true"></span></a>
+                    {% endif %}
+                </p>
+               
+            </div>
     {% endfor %}
 </div>

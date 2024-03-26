@@ -1,9 +1,9 @@
 ---
 layout: render-layout.njk
 title: Funding Opportunities
-component: highlight
+component: accordion
 ---
-{% from './_includes/_components.njk' import filtercard, card, button, stats, highlight, hero, category  %}
+{% from './_includes/_components.njk' import filtercard, card, button, stats, highlight, hero, category, accordion  %}
 
 <style>
 {% if component == "cards" %}{% include './_includes/card/_cards.css'  %} {% endif %}
@@ -16,37 +16,46 @@ component: highlight
 {% if component == "highlight" %}{% include './_includes/highlight/_highlight.css'  %}  {% endif %}
 {% if component == "hero" %}{% include './_includes/hero/_hero.css'  %} {% endif %}
 {% if component == "category" %}{% include './_includes/category/_category.css'  %} {% endif %}
+{% if component == "accordion" %}{% include './_includes/accordion/_accordion.css'  %} {% endif %}
 </style>
 
 
-
-
 {{
-    highlight({
-        color:"yellow",
-        title:"Next Steps",
-        heading:"",
-        description:"",
-        buttoncard:[
+    accordion({
+        title:"",
+        headline:"Bond Act Priorities",
+        items:[
             {
-                heading:"Reviewing Feedback",
-                description:"Multi-agency State working groups are reviewing the feedback received through the Environmental Bond Act Listening Tour and Project Ideas Survey to help identify needs for environmental funding and develop program logistics for Bond Act implementation. "
+                target:"first",
+                title:"Advancing Environmental Justice",
+                description:"At least 35%, with the goal of 40%, of the funds will benefit disadvantaged communities.",
+                ctalink:"/pages/priorities#justice",
+                ctatext:"Learn more about Environmental Justice"
             },
             {
-                heading:"Public Comment Opportunities ",
-                description:"As State agencies and authorities develop grant opportunities, eligibility guidelines will be published for public comment to fine tune programs to deliver Bond Act funds to communities. "
+                target:"second",
+                title:"Mitigating Climate Change",
+                description:"Helping municipalities redesign and rebuild to withstand future severe storms and flooding.",
+                ctalink:"/pages/priorities#climate",
+                ctatext:"Learn more about Mitigating Climate Change"
             },
             {
-                heading:"Ensuring Transparency ",
-                description:"As Bond Act funds are distributed, the State will work with stakeholders to ensure a transparent process that enables New Yorkers to see what is funded. "
+                target:"third",
+                title:"Job Creation",
+                description:"Promoting job creation by supporting an estimated 84,000 jobs with significant labor provisions.",
+                ctalink:"/pages/priorities#jobs",
+                ctatext:"Learn more about Job Creation"
+            },
+            {
+                target:"fourth",
+                title:"Protecting Natural Resources",
+                description:"Expanding access to open space, preserving farmland, and supporting projects.",
+                ctalink:"/pages/priorities#resources",
+                ctatext:"Learn more about Protecting Natural Resources"
             }
         ]
     })
 }}
-
-
-
-
 
 
 

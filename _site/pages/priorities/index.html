@@ -1141,6 +1141,129 @@
         width: 25%;
     }
 }
+/* accordion - NYSDS JHK */
+.accordion {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #d0d0ce;
+    border-radius: 15px;
+    background: none;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 15px;
+}
+
+.accordion-headline {
+    font-family: Oswald, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: block;
+    text-align: center;
+    padding-bottom: 15px;
+    color:#154973;
+}
+
+.accordion-button {
+    background: none;
+    padding: 20px;
+    border: 0;
+    text-align: left;
+    border-top:2px solid #d0d0ce;
+    border-bottom: none;
+    color: #154973;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.accordion-button-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 448 512' width='18' height='18' %3E%3C!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--%3E%3Cpath d='M416 208H272V64c0-17.7-14.3-32-32-32h-32c-17.7 0-32 14.3-32 32v144H32c-17.7 0-32 14.3-32 32v32c0 17.7 14.3 32 32 32h144v144c0 17.7 14.3 32 32 32h32c17.7 0 32-14.3 32-32V304h144c17.7 0 32-14.3 32-32v-32c0-17.7-14.3-32-32-32z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    height: 18px;
+    width: 18px;
+    display: inline-block;
+    color: #154973;
+}
+
+.accordion-button:first-of-type {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-top: none;
+    border-bottom: none;
+}
+
+.accordion-button:last-of-type {
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-top: 2px solid #d0d0ce;
+    border-bottom: none;
+}
+
+.accordion-button:hover {
+    background-color: #ededed;
+    text-decoration: underline;
+}
+
+.accordion-button:focus {
+    background-color: #ededed;
+    text-decoration: underline; 
+    outline: 3px solid #FACE00;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.accordion-button:active {
+    background-color: #ededed;
+    text-decoration: underline; 
+    outline: 3px solid #FACE00;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.accordion-description {
+    font-size: 16px;
+    font-weight: normal;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.accordion-cta {
+    font-size: 14px;
+    font-weight: bold;
+    text-align: right;
+    justify-content: flex-end;
+    display: flex;   
+    align-items: center;
+}
+
+.accordion-cta:hover {
+    color: #000;
+    outline: 1px #FACE00;
+}
+
+.accordion-cta:focus {
+    color: #000;
+    outline: 1px #FACE00;
+}
+
+.accordion-cta-arrow {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 448 512' width='20' height='20'%3E%3C!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--%3E%3Cpath d='M313.9 216H12c-6.6 0-12 5.4-12 12v56c0 6.6 5.4 12 12 12h301.9v46.1c0 21.4 25.9 32.1 41 17l86.1-86.1c9.4-9.4 9.4-24.6 0-33.9l-86.1-86.1c-15.1-15.1-41-4.4-41 17V216z'/%3E%3C/svg%3E");
+    height: 20px;
+    width: 20px;
+    display: inline-block;
+    margin-left: 5px;
+    filter: invert(17%) sepia(100%) saturate(6232%) hue-rotate(214deg) brightness(91%) contrast(101%);
+}
+
+
+/* media queries */
+@media (min-width: 992px) {
+    
+    
+}
+
 </style>
 
 

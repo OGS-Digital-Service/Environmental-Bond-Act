@@ -2,7 +2,7 @@
 layout: layout.njk
 title: Environmental Bond Act 
 ---
-{% from './_includes/_components.njk' import filtercard, card, button, stats, highlight, hero, category  %}
+{% from './_includes/_components.njk' import filtercard, card, button, stats, highlight, hero, category, accordion  %}
 
 
 {{ hero({
@@ -24,6 +24,51 @@ title: Environmental Bond Act
     ]
     })
 }}
+
+
+{{
+    accordion({
+        title:"Title",
+        headline:"Headline",
+        items:[
+            {
+                target:"first",
+                title:"First accordion item",
+                description:"text that appears in this area",
+                ctalink:"https://ny.gov",
+                ctatext:"Learn more about this thing"
+            },
+            {
+                target:"second",
+                title:"second one",
+                description:"something that is in here",
+                ctalink:"https://ny.gov",
+                ctatext:"Learn more about this thing"
+            },
+            {
+                target:"third",
+                title:"third trigger",
+                description:"another thing thats in this area"
+            },
+            {
+                target:"four",
+                title:"and so on",
+                description:"another thing thats in this area"
+            },
+            {
+                target:"four4",
+                title:"and so on",
+                description:"another thing thats in this area"
+            },
+            {
+                target:"four44",
+                title:"and so on",
+                description:"another thing thats in this area"
+            }        
+        ]
+    })
+}}
+
 
 
 {{
