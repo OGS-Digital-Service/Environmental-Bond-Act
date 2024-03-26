@@ -1,7 +1,9 @@
 <div class="stats">
-    {% if params.heading %}<h3 class="stats-heading
+    {% if params.heading %}
+    <h3 class="stats-heading
         {% if params.subhead === true %} stats-subhead {% endif %} 
-    "> {{params.heading}}</h3>{% endif %}
+    "> {{params.heading}}</h3>
+    {% endif %}
     <p class="stats-intro">{{params.intro}}</p>
     <ul class="stats-list">
         {% for card in params.cards %}
@@ -28,5 +30,13 @@
             </li>
         {% endfor %}
     </ul>
+
+    {% if params.outro %}
     <p class="stats-outro">{{params.outro | safe}}</p>
+    {% endif %}
+
+    {% if params.ctatext %}
+    <a href="{{params.ctalink}}" class="stats-cta"> {{params.ctatext}} </a>
+    {% endif %}
+
 </div>

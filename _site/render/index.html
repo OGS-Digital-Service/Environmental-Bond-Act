@@ -1,24 +1,21 @@
 
     
+
 <style>
 
 
 
 
 
+/* stats cards - NYSDS JHK */
 
-
-
-
-/* category tiles - NYSDS JHK */
-
-.category {
+.stats {
     display: flex;
     flex-direction: column;
     margin: 30px 0px;
 }
 
-.category-heading {
+.stats-heading {
     font-size: 36px;
     font-weight: bold;
     text-align: center;
@@ -27,18 +24,25 @@
     font-family: 'Figtree', sans-serif;
 }
 
-.category-subhead {
+.stats-subhead {
     font-size: 24px !important;
 }
 
-.category-intro {
+.stats-intro {
     font-size: 17px;
     margin: 15px 0px;
     text-align: center;
     font-family: 'Figtree', sans-serif;
 }
 
-.category-list {
+.stats-outro {
+    font-size: 16px;
+    margin: 25px 0px;
+    text-align: center;
+    font-family: 'Figtree', sans-serif;
+}
+
+.stats-list {
     list-style-type: none;
     display: flex;
     align-items: center;
@@ -48,52 +52,71 @@
     padding: 0;
 }
 
-.category-tile {
+.stats-card {
+    width: 260px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    text-align: center;
     align-items: center;
-    align-self: stretch;
-    width: 250px;
+    padding: 20px 10px;
     border-radius: 15px;
     margin: 10px;
+    white-space: nowrap;
+}
+
+.stats-blue {
     background-color: #154973;
-    
+    color: #fff;
+    fill: #fff;
 }
 
-.category-link {
-    height: 100%;
-    width: 100%;
-    align-content: center;
-    padding: 50px 20px;
-    font-size: 1em;
+.stats-gray {
+    background-color: #d0d0ce;
+    color: #000;
+    fill: #000;
+}
+
+.stats-the {
+    font-size: 2.1em;
     font-weight: bold;
-    text-decoration: none !important;
-    color: #fff;
-    border-radius: 15px;
-    
+    padding: 10px 0 10px 0;
+    margin: 0;
+    font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-.category-link:hover {
-    background-color: #000;
-    color: #fff;
-    text-decoration: underline !important;
+.stats-the-blue {
+    color: #FACE00;
 }
 
-.category-link:focus {
-    background-color: #000;
-    color: #fff;
-    text-decoration: underline !important;
+.stats-the-gray {
+    color: #154973;
+}
+
+.stats-description {
+    font-size: 1em;
+    margin: 0px;
+    text-transform: uppercase;
+    line-height: 1.375em;
+    overflow: hidden;
+    letter-spacing: 1px;
+    font-family: Oswald;
 }
 
 /* media queries */
 @media (min-width: 992px) {
-    .category-tile {
-        flex: 1;
-        width: 25%;
+    .stats-list {
+        flex-direction: row;
+        
     }
-}
+
+    .stats-card {
+        width: 23%;
+    }
+} 
+
+
+
+
 </style>
 
 
@@ -102,29 +125,3 @@
 
 
 
-
-<div class="category-tiles">
-    
-    <h3 class="category-heading"> Bond Act Priorities</h3>
-    
-    
-    <ul class="category-list">
-        
-            <li class="category-tile">
-                <a href="#justice" class="category-link">Advancing Environmental Justice</a>
-            </li>
-        
-            <li class="category-tile">
-                <a href="#climate" class="category-link">Mitigating Climate Change</a>
-            </li>
-        
-            <li class="category-tile">
-                <a href="#jobs" class="category-link">Creating Jobs</a>
-            </li>
-        
-            <li class="category-tile">
-                <a href="#resources" class="category-link">Protecting Natural Resources</a>
-            </li>
-        
-    </ul>
-</div>
