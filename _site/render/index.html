@@ -10,211 +10,162 @@
 
 
 
-
-
-/* accordion - NYSDS JHK */
-.accordion {
+.nysds-hero-container {
+    width: 100%;
     display: flex;
-    flex-direction: column;
-    border: 2px solid #d0d0ce;
-    border-radius: 15px;
-    background: none;
-    font-size: 18px;
-    font-weight: bold;
-    margin: 15px;
+    align-items: end;
+    min-height: 400px;
 }
 
-.accordion-headline {
-    font-family: Oswald, sans-serif;
-    font-size: 16px;
-    font-weight: bold;
-    text-transform: uppercase;
-    display: block;
-    text-align: center;
-    padding-bottom: 15px;
-    color:#154973;
-}
-
-.accordion-button {
-    background: none;
-    padding: 20px;
-    border: 0;
-    text-align: left;
-    border-top:2px solid #d0d0ce;
-    border-bottom: none;
-    color: #154973;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.accordion-button-icon {
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 448 512' width='18' height='18' %3E%3C!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--%3E%3Cpath d='M416 208H272V64c0-17.7-14.3-32-32-32h-32c-17.7 0-32 14.3-32 32v144H32c-17.7 0-32 14.3-32 32v32c0 17.7 14.3 32 32 32h144v144c0 17.7 14.3 32 32 32h32c17.7 0 32-14.3 32-32V304h144c17.7 0 32-14.3 32-32v-32c0-17.7-14.3-32-32-32z'/%3E%3C/svg%3E");
+.nysds-hero-background-image {
+     background-image: url(); /* PUT THE IMAGE URL HERE - replace the current full url with the new one */
     background-repeat: no-repeat;
-    height: 18px;
-    width: 18px;
-    display: inline-block;
-    color: #154973;
+    background-size: cover;
+    background-position: 50% 50%;
 }
 
-.accordion-button:first-of-type {
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-    border-top: none;
-    border-bottom: none;
+.nysds-hero-information {
+    width: 100%;
+    color: #fff;
+    padding: 35px 20px;
+    background-color: #154973;
 }
 
-.accordion-button:last-of-type {
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
-    border-top: 2px solid #d0d0ce;
-    border-bottom: none;
+.nysds-hero-title {
+    font-size: 28px;
+    line-height: 1.15em;
+    font-weight: 800;
+    font-family: 'Figtree', sans-serif;
+    margin: 0px;
 }
 
-.accordion-button:hover {
-    background-color: #ededed;
-    text-decoration: underline;
+.nysds-hero-headline {
+    color:#FACE00;
+    margin-bottom: 10px;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight:bold;
 }
 
-.accordion-button:focus {
-    background-color: #ededed;
-    text-decoration: underline; 
-    outline: 3px solid #FACE00;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
-}
-
-.accordion-button:active {
-    background-color: #ededed;
-    text-decoration: underline; 
-    outline: 3px solid #FACE00;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
-}
-
-.accordion-description {
+.nysds-hero-description {
     font-size: 16px;
-    font-weight: normal;
-    padding: 20px;
+    line-height: 25px;
+    margin: 20px 0 0;
+}
+
+.nysds-hero-links-list {
+    list-style-type: "";
     display: flex;
     flex-direction: column;
+    margin: 0;
+    padding: 0;
 }
 
-.accordion-cta {
-    font-size: 14px;
-    font-weight: bold;
-    text-align: right;
-    justify-content: flex-end;
-    display: flex;   
+.nysds-hero-links-list li {
+    display: flex;
     align-items: center;
+    margin-right: 45px;
+    margin-top: 20px;
 }
 
-.accordion-cta:hover {
-    color: #000;
-    outline: 1px #FACE00;
+ .nysds-hero-link {
+    color: #FACE00;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: underline;
+    font-size: 14px;
 }
 
-.accordion-cta:focus {
-    color: #000;
-    outline: 1px #FACE00;
+.nysds-hero-link:hover {
+    color: #FACE00;
+    text-decoration-thickness: 3px;
 }
 
-.accordion-cta-arrow {
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 448 512' width='20' height='20'%3E%3C!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--%3E%3Cpath d='M313.9 216H12c-6.6 0-12 5.4-12 12v56c0 6.6 5.4 12 12 12h301.9v46.1c0 21.4 25.9 32.1 41 17l86.1-86.1c9.4-9.4 9.4-24.6 0-33.9l-86.1-86.1c-15.1-15.1-41-4.4-41 17V216z'/%3E%3C/svg%3E");
-    height: 20px;
-    width: 20px;
-    display: inline-block;
-    margin-left: 5px;
-    filter: invert(17%) sepia(100%) saturate(6232%) hue-rotate(214deg) brightness(91%) contrast(101%);
+.nysds-hero-link:focus {
+    color: #FACE00;
+    text-decoration-thickness: 3px;
+    outline-offset: 4px;
 }
 
+.nysds-hero-link-arrow {
+    display: block;
+    height: 16px;
+    width: 16px;
+    margin: 0 5px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3C!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--%3E%3Cpath fill='%23FACE00' d='M334.5 414c8.8 3.8 19 2 26-4.6l144-136c4.8-4.5 7.5-10.8 7.5-17.4s-2.7-12.9-7.5-17.4l-144-136c-7-6.6-17.2-8.4-26-4.6s-14.5 12.5-14.5 22l0 72L32 192c-17.7 0-32 14.3-32 32l0 64c0 17.7 14.3 32 32 32l288 0 0 72c0 9.6 5.7 18.2 14.5 22z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+}
 
-/* media queries */
+.nysds-hero-link-arrow:dir(rtl) {
+    rotate: 180deg;
+}
+
 @media (min-width: 992px) {
-    
-    
+    .nysds-hero-information {
+        margin-top: 0px;
+        margin: 0px 60px;
+        width: 580px;
+        padding: 45px 45px;
+        border-radius: 30px;
+    }
+
+    .nysds-hero-container {
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    .nysds-hero-description {
+        font-size: 18px;
+    }
+
+    .nysds-hero-title {
+        font-size: 36px;
+    }
+
+    .nysds-hero-information {
+        padding: 45px 35px;
+    }
+
+    .nysds-hero-links-list {
+        flex-direction: row;
+    }
+
+    .nysds-hero-links-list li {
+        margin-top: 35px;
+    }
 }
  
+
+
 </style>
 
 
 
-        <h3 class="accordion-headline">Bond Act Priorities</h3>
-    
-<div class="accordion">
-    
-            <button class="accordion-button" 
-                    data-toggle="collapse" 
-                    data-target="#first">
-                Advancing Environmental Justice
-                <span class="accordion-button-icon" aria-hidden="true"></span>
-            </button>
-            <div class="accordion-item collapse" id="first">
-                <p class="accordion-description">
-                    At least 35%, with the goal of 40%, of the funds will benefit disadvantaged communities.
-                    
-                        <a href="/pages/priorities#justice" class="accordion-cta">Learn more about Environmental Justice<span class="accordion-cta-arrow" aria-hidden="true"></span></a>
-                    
-                </p>
-               
-            </div>
-    
-            <button class="accordion-button" 
-                    data-toggle="collapse" 
-                    data-target="#second">
-                Mitigating Climate Change
-                <span class="accordion-button-icon" aria-hidden="true"></span>
-            </button>
-            <div class="accordion-item collapse" id="second">
-                <p class="accordion-description">
-                    Helping municipalities redesign and rebuild to withstand future severe storms and flooding.
-                    
-                        <a href="/pages/priorities#climate" class="accordion-cta">Learn more about Mitigating Climate Change<span class="accordion-cta-arrow" aria-hidden="true"></span></a>
-                    
-                </p>
-               
-            </div>
-    
-            <button class="accordion-button" 
-                    data-toggle="collapse" 
-                    data-target="#third">
-                Job Creation
-                <span class="accordion-button-icon" aria-hidden="true"></span>
-            </button>
-            <div class="accordion-item collapse" id="third">
-                <p class="accordion-description">
-                    Promoting job creation by supporting an estimated 84,000 jobs with significant labor provisions.
-                    
-                        <a href="/pages/priorities#jobs" class="accordion-cta">Learn more about Job Creation<span class="accordion-cta-arrow" aria-hidden="true"></span></a>
-                    
-                </p>
-               
-            </div>
-    
-            <button class="accordion-button" 
-                    data-toggle="collapse" 
-                    data-target="#fourth">
-                Protecting Natural Resources
-                <span class="accordion-button-icon" aria-hidden="true"></span>
-            </button>
-            <div class="accordion-item collapse" id="fourth">
-                <p class="accordion-description">
-                    Expanding access to open space, preserving farmland, and supporting projects.
-                    
-                        <a href="/pages/priorities#resources" class="accordion-cta">Learn more about Protecting Natural Resources<span class="accordion-cta-arrow" aria-hidden="true"></span></a>
-                    
-                </p>
-               
-            </div>
-    
+
+
+
+
+
+
+
+
+
+
+<div class="nysds-hero-container  nysds-hero-background-image ">
+    <div class="nysds-hero-information">
+        
+        
+            <p class="nysds-hero-headline">Environmental Bond Act</p>
+        
+            <h2 class="nysds-hero-title">Current Projects</h2>
+        
+            <p class="nysds-hero-description">Find additional information about current and past projects include specifications and outcomes.</p>
+        
+        
+    </div>
 </div>
-
-
-
-
-
-
-
 
 
 

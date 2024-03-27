@@ -1,7 +1,7 @@
 ---
 layout: render-layout.njk
 title: Funding Opportunities
-component: accordion
+component: hero
 ---
 {% from './_includes/_components.njk' import filtercard, card, button, stats, highlight, hero, category, accordion  %}
 
@@ -20,7 +20,11 @@ component: accordion
 </style>
 
 
-{{
+
+
+
+
+{# {{
     accordion({
         title:"",
         headline:"Bond Act Priorities",
@@ -55,47 +59,47 @@ component: accordion
             }
         ]
     })
-}}
-
-
-
-
-
-
-{# {{ hero({
-    title:"Program Priorities",
-    description:"",
-    image:"https://www.ny.gov/sites/default/files/styles/hero_wide/public/2023-02/outdoors_family_nyc_bridge_environment_1280.jpg?h=b5f6a62e&itok=dbAWmV3E",
-    headline:"Environmental Bond Act"
-    })
 }} #}
 
 
 
 
-{# {{
+
+
+{{ hero({
+    title:"Current Projects",
+    description:"Find additional information about current and past projects include specifications and outcomes.",
+    image:"https://www.ny.gov/sites/default/files/styles/hero_wide/public/2023-01/Wellesley-Island-from-Nature-trail_1280.jpg?h=b5f6a62e&itok=82o6TYhg",
+    headline:"Environmental Bond Act"
+    })
+}}
+
+
+
+{# 
+{{
     category({
-        heading:"Bond Act Priorities",
+        heading:"Bond Act Funding",
         intro:"",
         tiles:[
             {
-                link:"#justice",
-                linktext:"Advancing Environmental Justice",
-                color:"blue"
-            },
-            {
                 link:"#climate",
-                linktext:"Mitigating Climate Change",
+                linktext:"Climate Change Mitigation",
                 color:"blue"
             },
             {
-                link:"#jobs",
-                linktext:"Creating Jobs",
+                link:"#flood",
+                linktext:"Restoration and Flood Risk Reduction",
                 color:"blue"
             },
             {
-                link:"#resources",
-                linktext:"Protecting Natural Resources",
+                link:"#water",
+                linktext:"Water Quality Improvement and Resilient Infrastructure",
+                color:"blue"
+            },
+            {
+                link:"#land",
+                linktext:"Open Space Land Conservation and Recreation",
                 color:"blue"
             }
         ]
