@@ -5,6 +5,7 @@
         {% for card in params.cards %}
             <li class="filtercard-list-item">
                     <div class="filtercard-top">
+                        {%if card.category %}
                         <span class="filtercard-category">
                             <span class="sr-only">Category of </span>
                         {%if card.category === "BIL"%}
@@ -14,6 +15,7 @@
                             Inflation Reduction Act (IRA)
                         {%endif%}
                         </span>
+                        {% endif %}
                     {%if card.agency %}
                         <span class="filtercard-agency"><span class="sr-only">Agency </span>{{card.agency}}</span>
                     {%endif%}
