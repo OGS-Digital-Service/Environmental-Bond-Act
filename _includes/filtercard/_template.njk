@@ -42,7 +42,7 @@
             </caption>
         <thead>
             <tr class="filter-archive-table-header">
-                <th scope="col" >Category</th>
+                {# <th scope="col" >Category</th> #}
                 <th  scope="col" class="filter-table-title">Title</th>
                 <th  scope="col" class="filter-table-date">Published Date</th>
                 <th scope="col" >Agency</th>
@@ -51,7 +51,7 @@
         <tbody>
         {% for card in params.cards %}
             <tr class="filter-archive-table-row">
-                <td>
+                {# <td>
                     <span>
                         <span class="sr-only">Category of </span>
                         {%if card.category === "BIL"%}
@@ -61,7 +61,7 @@
                             Inflation Reduction Act (IRA)
                         {%endif%}
                     </span>
-                </td>
+                </td> #}
                 <td>
                     <a href="{{card.link}}" class="filter-archive-link">{{card.title}}</a>
                 </td>
