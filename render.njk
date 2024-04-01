@@ -1,7 +1,7 @@
 ---
 layout: render-layout.njk
 title: Funding Opportunities
-component: hero
+component: 
 ---
 {% from './_includes/_components.njk' import filtercard, card, button, stats, highlight, hero, category, accordion  %}
 
@@ -19,8 +19,95 @@ component: hero
 {% if component == "accordion" %}{% include './_includes/accordion/_accordion.css'  %} {% endif %}
 </style>
 
-
+{# 
 {{
+    category({
+        heading:"",
+        intro:"",
+        tiles:[
+            {
+                link:"#funding",
+                linktext:"Funding Resources",
+                color:"blue"
+            },
+            {
+                link:"#faq",
+                linktext:"Frequently Asked Questions",
+                color:"blue"
+            },
+            {
+                link:"#listening",
+                linktext:"Listening Tours",
+                color:"blue"
+            }
+        ]
+
+    })
+}} #}
+
+NYG-1165
+
+<style>
+    .alert {
+        display: flex;
+        flex-direction: column;
+        
+        align-items: start;
+        background-color: #fec3c3;
+        padding: 20px;
+        justify-content: start;
+    }
+
+    .alert-heading {
+        display: flex;
+        font-size: 1.5em;
+        font-weight: bold;
+        width: max-content;
+        {# white-space: nowrap; #}
+        margin: 20px;
+    }
+
+    .alert-text {
+        display: flex;
+        width: auto;
+        margin: 10px;
+    }
+
+    .alert-cta {
+        display: flex;
+        margin: 10px;
+        min-width: fit-content;
+
+    }
+
+    @media (min-width: 1280px) {
+        .alert { 
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+
+</style>
+
+<div class="alert">
+    <div class="alert-heading">INFORMATION ON NOVEL CORONAVIRUS</div>
+    <div class="alert-text">Severe weather alerts effective for Allegany County, Bronx County, Broome County, Cattaraugus County, Cayuga County, Chautauqua County, Chemung County, Chenango County, Clinton County, Columbia County, Cortland County..</div>
+    <div class="alert-cta">
+    <a href="#" class="">LEARN MORE</a>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+{# {{
     filtercard({
         heading:"Recent News",
         archive: false,
@@ -57,7 +144,7 @@ component: hero
             }
         ]
     })
-}}
+}} #}
 
 
 
