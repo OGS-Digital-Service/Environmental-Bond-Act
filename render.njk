@@ -1,7 +1,7 @@
 ---
 layout: render-layout.njk
 title: Funding Opportunities
-component: 
+component: accordion
 ---
 {% from './_includes/_components.njk' import filtercard, card, button, stats, highlight, hero, category, accordion  %}
 
@@ -63,42 +63,22 @@ component:
 
 
 
-{# {{
+{{
     accordion({
         title:"",
         headline:"Bond Act Priorities",
         items:[
             {
-                target:"first",
-                title:"Advancing Environmental Justice",
-                description:"At least 35%, with the goal of 40%, of the funds will benefit disadvantaged communities.",
-                ctalink:"/pages/priorities#justice",
-                ctatext:"Learn more about Environmental Justice"
-            },
-            {
-                target:"second",
-                title:"Mitigating Climate Change",
-                description:"Helping municipalities redesign and rebuild to withstand future severe storms and flooding.",
-                ctalink:"/pages/priorities#climate",
-                ctatext:"Learn more about Mitigating Climate Change"
-            },
-            {
-                target:"third",
-                title:"Job Creation",
-                description:"Promoting job creation by supporting an estimated 84,000 jobs with significant labor provisions.",
-                ctalink:"/pages/priorities#jobs",
-                ctatext:"Learn more about Job Creation"
-            },
-            {
-                target:"fourth",
-                title:"Protecting Natural Resources",
-                description:"Expanding access to open space, preserving farmland, and supporting projects.",
-                ctalink:"/pages/priorities#resources",
-                ctatext:"Learn more about Protecting Natural Resources"
+                target:"one",
+                title:"",
+                description:"SOmerthing <ul><li>first item</li></ul>",
+                ctalink:"",
+                ctatext:""
             }
+            
         ]
     })
-}} #}
+}}
 
 
 

@@ -11,7 +11,7 @@
             </button>
             <div class="accordion-item collapse" id="{{item.target}}">
                 <p class="accordion-description">
-                    {{item.description}}
+                    {{item.description | safe}}
                     {% if item.ctalink %}
                         <a href="{{item.ctalink}}" class="accordion-cta">{{item.ctatext}}<span class="accordion-cta-arrow" aria-hidden="true"></span></a>
                     {% endif %}
