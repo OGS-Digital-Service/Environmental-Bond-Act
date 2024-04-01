@@ -1,9 +1,9 @@
 ---
 layout: render-layout.njk
 title: Funding Opportunities
-component: accordion
+component: backtop
 ---
-{% from './_includes/_components.njk' import filtercard, card, button, stats, highlight, hero, category, accordion  %}
+{% from './_includes/_components.njk' import filtercard, card, button, stats, highlight, hero, category, accordion, backtop  %}
 
 <style>
 {% if component == "cards" %}{% include './_includes/card/_cards.css'  %} {% endif %}
@@ -17,11 +17,19 @@ component: accordion
 {% if component == "hero" %}{% include './_includes/hero/_hero.css'  %} {% endif %}
 {% if component == "category" %}{% include './_includes/category/_category.css'  %} {% endif %}
 {% if component == "accordion" %}{% include './_includes/accordion/_accordion.css'  %} {% endif %}
+{% if component == "backtop" %}{% include './_includes/backtop/_backtop.css'  %} {% endif %}
 </style>
 
 
 
 
+
+{{
+    backtop({
+        link:"#main-region",
+        text:"back to top" 
+    })
+}}
 
 
 

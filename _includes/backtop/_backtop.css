@@ -1,18 +1,3 @@
-
-    
-
-<style>
-
-
-
-
-
-
-
-
-
-
-
 /* back to top - NYSDS JHK */
 .back-to-top {
     position: fixed;
@@ -54,40 +39,4 @@
     .back-to-top-button {
         padding: 10px;
     }
-} 
-</style>
-
-
-
-
-
-<div class="back-to-top">
-   <a href="#main-region" class="back-to-top-button">back to top</a>
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+}

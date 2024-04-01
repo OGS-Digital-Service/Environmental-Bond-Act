@@ -2,7 +2,7 @@
 layout: layout.njk
 title: Environmental Bond Act 
 ---
-{% from './_includes/_components.njk' import filtercard, card, button, stats, highlight, hero, category, accordion  %}
+{% from './_includes/_components.njk' import filtercard, card, button, stats, highlight, hero, category, accordion, backtop  %}
 
 
 {{ hero({
@@ -24,9 +24,14 @@ title: Environmental Bond Act
     ]
     })
 }}
-{% include '_css-link.njk' %}
-
        
+
+{{
+    backtop({
+        link:"#main",
+        text:"back to top" 
+    })
+}}
 
 {{
     accordion({
