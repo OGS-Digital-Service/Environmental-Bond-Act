@@ -6,16 +6,16 @@
             <button class="accordion-button" 
                     data-toggle="collapse" 
                     data-target="#{{item.target}}">
-                {{item.title}}
+            {{item.title}}
                 <span class="accordion-button-icon" aria-hidden="true"></span>
             </button>
             <div class="accordion-item collapse" id="{{item.target}}">
-                <p class="accordion-description">
+                <div class="accordion-description">
                     {{item.description | safe}}
                     {% if item.ctalink %}
                         <a href="{{item.ctalink}}" class="accordion-cta">{{item.ctatext}}<span class="accordion-cta-arrow" aria-hidden="true"></span></a>
                     {% endif %}
-                </p>
+                </div>
                
             </div>
     {% endfor %}
