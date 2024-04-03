@@ -2,7 +2,7 @@
 layout: layout.njk
 title: Environmental Bond Act 
 ---
-{% from './_includes/_components.njk' import filtercard, card, button, stats, highlight, hero, category, accordion, backtop  %}
+{% from './_includes/_components.njk' import filtercard, card, button, stats, highlight, hero, category, accordion, backtop, stayupdated  %}
 
 
 {{ hero({
@@ -25,6 +25,16 @@ title: Environmental Bond Act
     })
 }}
        
+
+{{
+    stayupdated({
+        title:"Stay Updated",
+        description:"Sign up to receive updates on the Bond Act programs and news. ",
+        linktext:"Sign Up",
+        link:"https://public.govdelivery.com/accounts/NYSDEC/subscriber/new?topic_id=NYSDEC_162"
+    })
+}}
+
 
 {{
     backtop({

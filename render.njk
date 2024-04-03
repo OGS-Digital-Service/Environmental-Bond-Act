@@ -1,9 +1,9 @@
 ---
 layout: render-layout.njk
 title: Funding Opportunities
-component: backtop
+component: stay
 ---
-{% from './_includes/_components.njk' import filtercard, card, button, stats, highlight, hero, category, accordion, backtop  %}
+{% from './_includes/_components.njk' import filtercard, card, button, stats, highlight, hero, category, accordion, backtop, stayupdated  %}
 
 <style>
 {% if component == "cards" %}{% include './_includes/card/_cards.css'  %} {% endif %}
@@ -18,18 +18,26 @@ component: backtop
 {% if component == "category" %}{% include './_includes/category/_category.css'  %} {% endif %}
 {% if component == "accordion" %}{% include './_includes/accordion/_accordion.css'  %} {% endif %}
 {% if component == "backtop" %}{% include './_includes/backtop/_backtop.css'  %} {% endif %}
+{% if component == "stay" %}{% include './_includes/stayupdated/_stayupdated.css'  %} {% endif %}
 </style>
 
 
-
-
-
 {{
+    stayupdated({
+        title:"Stay Updated",
+        description:"Sign up to receive updates on the Bond Act programs and news. ",
+        linktext:"Sign Up",
+        link:"https://public.govdelivery.com/accounts/NYSDEC/subscriber/new?topic_id=NYSDEC_162"
+    })
+}}
+
+
+{# {{
     backtop({
         link:"#main-region",
         text:"back to top" 
     })
-}}
+}} #}
 
 
 

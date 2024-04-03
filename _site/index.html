@@ -1306,6 +1306,77 @@
         padding: 10px;
     }
 }
+/* stay updated - NYSDS JHK */
+.stay-updated {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 40px;
+}
+
+.stay-updated-icon {
+    background-image: url("data:image/svg+xml,%3Csvg version='1.1' width='40' height='40' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 100 100' style='enable-background:new 0 0 100 100;' xml:space='preserve'%3E%3Cstyle type='text/css'%3E .st0%7Bfill:none;stroke:%23000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;%7D%0A%3C/style%3E%3Cpath class='st0' d='M22.01,36.91h-4.68h-4.68c-3.21,0-5.81,2.6-5.81,5.81v12.72c0,3.21,2.6,5.81,5.81,5.81h4.68h4.68h5.81v-5.81 V42.72v-5.81H22.01z'/%3E%3Crect x='27.83' y='36.91' class='st0' width='7.98' height='24.35'/%3E%3Cpolygon class='st0' points='66.85,74.76 35.81,61.26 35.81,36.91 66.85,23.4 '/%3E%3Cpath class='st0' d='M66.85,42.41c3.69,0,6.67,2.99,6.67,6.67c0,3.69-2.99,6.67-6.67,6.67'/%3E%3Cpolygon class='st0' points='23.87,79.36 16.44,79.36 14.19,61.26 21.62,61.26 '/%3E%3Cline class='st0' x1='79.78' y1='49.08' x2='93.18' y2='49.08'/%3E%3Cline class='st0' x1='76.12' y1='57.97' x2='85.82' y2='67.21'/%3E%3Cline class='st0' x1='76.45' y1='40.06' x2='86.13' y2='30.82'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    filter:invert(0%);
+    width: 40px;
+    height: 40px;
+}
+
+.stay-updated-heading {
+    font-weight: bold;
+    font-family: 'Figtree', sans-serif;
+    margin: 10px 35px;
+    font-size:1.85em;
+}
+
+.stay-updated-description {
+    margin: 10px 40px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.stay-updated-cta {
+    margin-left: 0;
+}
+
+.stay-updated-link {
+    display: block;
+    border: 1px solid #000;
+    color: #000;
+    font-weight: bold;
+    text-transform:uppercase;
+    padding: 10px;
+    border-radius: 15px;
+    min-width: 150px;
+    text-align: center;
+    margin: 10px;
+    font-size: 14px;
+    text-decoration: none !important;
+}
+
+.stay-updated-link:hover {
+    text-decoration: underline !important;
+    background: #000;
+    color: #fff;
+} 
+
+.stay-updated-link:focus {
+    text-decoration: underline !important;
+    background: #000;
+    color: #fff;
+} 
+
+/* media queries */
+@media (min-width: 992px) {
+    .stay-updated {
+        min-height: 50px;
+        flex-direction: row;
+    }
+    .stay-updated-cta {
+        margin-left: 20px;
+    }
+}
 </style>
 
 
@@ -1449,6 +1520,16 @@
 </div>
 
        
+
+<div class="stay-updated">
+    <div class="stay-updated-icon"></div>
+    <h2 class="stay-updated-heading"> Stay Updated </h2>
+    <p class="stay-updated-description">Sign up to receive updates on the Bond Act programs and news. </p>
+    <div class="stay-updated-cta">
+        <a class="stay-updated-link" href="https://public.govdelivery.com/accounts/NYSDEC/subscriber/new?topic_id=NYSDEC_162">Sign Up</a>
+    </div>
+</div>
+
 
 <div class="back-to-top">
    <a href="#main" class="back-to-top-button">back to top</a>
