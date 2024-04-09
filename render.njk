@@ -1,7 +1,7 @@
 ---
 layout: render-layout.njk
 title: Funding Opportunities
-component: stay
+component: hero
 ---
 {% from './_includes/_components.njk' import filtercard, card, button, stats, highlight, hero, category, accordion, backtop, stayupdated  %}
 
@@ -22,14 +22,14 @@ component: stay
 </style>
 
 
-{{
+{# {{
     stayupdated({
         title:"Stay Updated",
         description:"Sign up to receive updates on the Bond Act programs and news. ",
         linktext:"Sign Up",
         link:"https://public.govdelivery.com/accounts/NYSDEC/subscriber/new?topic_id=NYSDEC_162"
     })
-}}
+}} #}
 
 
 {# {{
@@ -99,13 +99,13 @@ component: stay
 
 
 
-{# {{ hero({
-    title:"Resources",
-    description:"Find resources for your project and read frequently asked questions about the Bond Act.",
+{{ hero({
+    title:"Resources for Resilience",
+    description:"",
     image:"https://www.ny.gov/sites/default/files/styles/hero_wide/public/2023-01/Wellesley-Island-from-Nature-trail_1280.jpg?h=b5f6a62e&itok=82o6TYhg",
     headline:"Environmental Bond Act"
     })
-}} #}
+}}
 
 
 

@@ -10,118 +10,178 @@
 
 
 
+.nysds-hero-container {
+    width: 100%;
+    display: flex;
+    align-items: end;
+    min-height: 400px;
+}
 
+.nysds-hero-background-image {
+     background-image: url(); /* PUT THE IMAGE URL HERE - replace the current full url with the new one */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+}
 
+.nysds-hero-information {
+    width: 100%;
+    color: #fff;
+    padding: 35px 20px;
+    background-color: #154973;
+}
 
+.nysds-hero-title {
+    font-size: 28px;
+    line-height: 1.15em;
+    font-weight: 800;
+    font-family: 'Figtree', sans-serif;
+    margin: 0px;
+}
 
-/* stay updated - NYSDS JHK */
-.stay-updated {
+.nysds-hero-headline {
+    color:#FACE00;
+    margin-bottom: 10px;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight:bold;
+}
+
+.nysds-hero-description {
+    font-size: 16px;
+    line-height: 25px;
+    margin: 20px 0 0;
+}
+
+.nysds-hero-links-list {
+    list-style-type: "";
     display: flex;
     flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+
+.nysds-hero-links-list li {
+    display: flex;
     align-items: center;
-    justify-content: center;
-    margin: 0 40px;
+    margin-right: 45px;
+    margin-top: 20px;
 }
 
-.stay-updated-icon {
-    background-image: url("data:image/svg+xml,%3Csvg version='1.1' width='40' height='40' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 100 100' style='enable-background:new 0 0 100 100;' xml:space='preserve'%3E%3Cstyle type='text/css'%3E .st0%7Bfill:none;stroke:%23000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;%7D%0A%3C/style%3E%3Cpath class='st0' d='M22.01,36.91h-4.68h-4.68c-3.21,0-5.81,2.6-5.81,5.81v12.72c0,3.21,2.6,5.81,5.81,5.81h4.68h4.68h5.81v-5.81 V42.72v-5.81H22.01z'/%3E%3Crect x='27.83' y='36.91' class='st0' width='7.98' height='24.35'/%3E%3Cpolygon class='st0' points='66.85,74.76 35.81,61.26 35.81,36.91 66.85,23.4 '/%3E%3Cpath class='st0' d='M66.85,42.41c3.69,0,6.67,2.99,6.67,6.67c0,3.69-2.99,6.67-6.67,6.67'/%3E%3Cpolygon class='st0' points='23.87,79.36 16.44,79.36 14.19,61.26 21.62,61.26 '/%3E%3Cline class='st0' x1='79.78' y1='49.08' x2='93.18' y2='49.08'/%3E%3Cline class='st0' x1='76.12' y1='57.97' x2='85.82' y2='67.21'/%3E%3Cline class='st0' x1='76.45' y1='40.06' x2='86.13' y2='30.82'/%3E%3C/svg%3E");
-    background-repeat: no-repeat;
-    filter:invert(0%);
-    width: 40px;
-    height: 40px;
-}
-
-.stay-updated-heading {
+ .nysds-hero-link {
+    color: #FACE00;
+    text-transform: uppercase;
     font-weight: bold;
-    font-family: 'Figtree', sans-serif;
-    margin: 10px 35px;
-    font-size:1.85em;
-}
-
-.stay-updated-description {
-    margin: 10px 40px;
-    font-size: 18px;
-    text-align: center;
-}
-
-.stay-updated-cta {
-    margin-left: 0;
-}
-
-.stay-updated-link {
-    display: block;
-    border: 1px solid #000;
-    color: #000;
-    font-weight: bold;
-    text-transform:uppercase;
-    padding: 10px;
-    border-radius: 15px;
-    min-width: 150px;
-    text-align: center;
-    margin: 10px;
+    text-decoration: underline;
     font-size: 14px;
-    text-decoration: none !important;
 }
 
-.stay-updated-link:hover {
-    text-decoration: underline !important;
-    background: #000;
-    color: #fff;
-} 
+.nysds-hero-link:hover {
+    color: #FACE00;
+    text-decoration-thickness: 3px;
+}
 
-.stay-updated-link:focus {
-    text-decoration: underline !important;
-    background: #000;
-    color: #fff;
-} 
+.nysds-hero-link:focus {
+    color: #FACE00;
+    text-decoration-thickness: 3px;
+    outline-offset: 4px;
+}
 
-/* media queries */
+.nysds-hero-link-arrow {
+    display: block;
+    height: 16px;
+    width: 16px;
+    margin: 0 5px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3C!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--%3E%3Cpath fill='%23FACE00' d='M334.5 414c8.8 3.8 19 2 26-4.6l144-136c4.8-4.5 7.5-10.8 7.5-17.4s-2.7-12.9-7.5-17.4l-144-136c-7-6.6-17.2-8.4-26-4.6s-14.5 12.5-14.5 22l0 72L32 192c-17.7 0-32 14.3-32 32l0 64c0 17.7 14.3 32 32 32l288 0 0 72c0 9.6 5.7 18.2 14.5 22z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+}
+
+.nysds-hero-link-arrow:dir(rtl) {
+    rotate: 180deg;
+}
+
 @media (min-width: 992px) {
-    .stay-updated {
-        min-height: 50px;
+    .nysds-hero-information {
+        margin-top: 0px;
+        margin: 0px 60px;
+        width: 580px;
+        padding: 45px 45px;
+        border-radius: 30px;
+    }
+
+    .nysds-hero-container {
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    .nysds-hero-description {
+        font-size: 18px;
+    }
+
+    .nysds-hero-title {
+        font-size: 36px;
+    }
+
+    .nysds-hero-information {
+        padding: 45px 35px;
+    }
+
+    .nysds-hero-links-list {
         flex-direction: row;
     }
-    .stay-updated-cta {
-        margin-left: 20px;
+
+    .nysds-hero-links-list li {
+        margin-top: 35px;
     }
-} 
+}
+ 
+
+
+
+
 </style>
 
 
-<div class="stay-updated">
-    <div class="stay-updated-icon"></div>
-    <h2 class="stay-updated-heading"> Stay Updated </h2>
-    <p class="stay-updated-description">Sign up to receive updates on the Bond Act programs and news. </p>
-    <div class="stay-updated-cta">
-        <a class="stay-updated-link" href="https://public.govdelivery.com/accounts/NYSDEC/subscriber/new?topic_id=NYSDEC_162">Sign Up</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="nysds-hero-container  nysds-hero-background-image ">
+    <div class="nysds-hero-information">
+        
+        
+            <p class="nysds-hero-headline">Environmental Bond Act</p>
+        
+            <h2 class="nysds-hero-title">Resources for Resilience</h2>
+        
+        
     </div>
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
