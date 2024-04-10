@@ -1,7 +1,7 @@
 ---
 layout: render-layout.njk
 title: Funding Opportunities
-component: hero
+component: accordion
 ---
 {% from './_includes/_components.njk' import filtercard, card, button, stats, highlight, hero, category, accordion, backtop, stayupdated  %}
 
@@ -20,6 +20,25 @@ component: hero
 {% if component == "backtop" %}{% include './_includes/backtop/_backtop.css'  %} {% endif %}
 {% if component == "stay" %}{% include './_includes/stayupdated/_stayupdated.css'  %} {% endif %}
 </style>
+
+{# {{
+    button({
+        buttons:[
+            
+            {
+                type:"link",
+                title:"Guidelines for Projects with Closed Comment Periods",
+                link:"pages/resources-for-resilience#closed"
+            }
+        ]
+    })
+}} #}
+
+
+
+
+
+
 
 
 {# {{
@@ -99,13 +118,13 @@ component: hero
 
 
 
-{{ hero({
-    title:"Resources for Resilience 8",
+{# {{ hero({
+    title:"Eligibility Guidelines With Closed Comment Periods",
     description:"",
     image:"https://www.ny.gov/sites/default/files/styles/hero_wide/public/2023-01/Wellesley-Island-from-Nature-trail_1280.jpg?h=b5f6a62e&itok=82o6TYhg",
     headline:"Environmental Bond Act"
     })
-}}
+}} #}
 
 
 
