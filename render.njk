@@ -1,7 +1,7 @@
 ---
 layout: render-layout.njk
 title: Funding Opportunities
-component: stats
+component: accordion
 ---
 {% from './_includes/_components.njk' import filtercard, card, button, stats, highlight, hero, category, accordion, backtop, stayupdated  %}
 
@@ -21,34 +21,205 @@ component: stats
 {% if component == "stay" %}{% include './_includes/stayupdated/_stayupdated.css'  %} {% endif %}
 </style>
 
-{# {{
-    button({
-        buttons:[
-            
+
+
+
+{{
+    accordion({
+        title:"",
+        headline:"Archived Guideline Comment Periods",
+        items:[
             {
-                type:"link",
-                title:"Guidelines for Projects with Closed Comment Periods",
-                link:"pages/resources-for-resilience#closed"
+                target:"archive1",
+                title:"Projects to Expand the Existing Tree Canopy and Bolster Community Health",
+                description:"
+
+                Past Due Public Comment Deadline: March 8, 2024
+
+                <strong>Eligibility Guidelines for Projects to Expand the Existing Tree Canopy and Bolster Community Health</strong>
+
+                The New York State Department of Environmental Conservation (NYS DEC) has developed the following eligibility guidelines to implement funding under the Clean Water, Clean Air and Green Jobs Environmental Bond Act of 2022 (Bond Act). To allocate funding under these proposed guidelines, NYS DEC will use the authority granted in provisions of the Bond Act to undertake State-administered projects. Additional eligibility guidelines being developed will include grant opportunities for locally administered initiatives.
+
+                In order to achieve and advance climate change mitigation goals identified in the Bond Act, specifically those found in §58-0701, including carbon sequestration, urban forestry projects such as forest and habitat restoration, expansion of existing tree canopy, and bolstering community health, NYS DEC will use Bond Act funds to support the expansion of New York State’s existing tree canopy and urban forestry projects by:
+                <ul>
+                <li>building capacity for production of plant materials; and</li>
+                <li>investing in the capital cost to procure and develop a comprehensive data tracking and management system to enable New York State to achieve and advance climate change mitigation goals identified in the Bond Act.</li>
+                </ul>
+                The Bond Act requires that disadvantaged communities shall receive no less than 35 percent, with the goal of 40 percent, of the benefit of total Bond Act funds ($4.2 billion). The term disadvantaged communities shall mean the same definition approved by the Climate Justice Working Group under the State’s Climate Leadership and Community Protection Act. In line with this goal, NYS DEC will aim to ensure at least 40 percent of each program benefits disadvantaged communities.
+
+                The projects to Expand the Existing Tree Canopy and Bolster Community Health will facilitate implementation of future programs that will directly benefit disadvantaged communities and communities statewide.
+
+                Eligible activities include:
+                <ul>
+                    <li>Projects to repair and/or update New York State’s capacity to produce seedlings and bare root trees through the upgrade and modernization of the New York State’s tree nursery and seed production facilities. The project aims to support: </li>
+                    <li>Development and modernization of greenhouses using renewable energy to provide expanded seed processing and storage capabilities;</li>
+                    <li>Improvements to seedling nursery infrastructure that increase seedling production capacity and survival; and</li>
+                    <li>Development of a Forest and Ecosystem Health Lab facility to promote ecosystem health, enhance carbon sequestration, and support scientific research.</li>
+                </ul>
+                2. Capital investment in a database to track forest stand asset creation, tree planting, inventory, assessment, management and monitoring, and data dashboards reporting on acreage and type of land conserved. The database will help meet New York State’s 30 x 30 goal to conserve 30 percent of the state’s land and water by 2030 and mandates for modelling forest carbon sequestration and storage that contribute to achieving New York State’s climate goals.
+
+                To align with the climate change mitigation goal outlined in the Bond Act, NYS DEC will initiate the development of a comprehensive reforestation database. This database will serve as a public-facing, spatially based platform designed to track all reforestation initiatives, monitor progress, and assess success. The primary objectives of this database are:
+                <ul>
+                    <li>Enhanced Collaboration: To encourage collaboration among stakeholders and partners by providing a platform for sharing information and coordinating efforts in support of landscape-wide reforestation goals and achievements; and</li>
+                    <li>Holistic Approach: The database will capture data related to tree planting and forest asset management across various DEC programs to support efforts in disadvantaged communities and both private and public properties.</li>
+                </ul>",
+                ctalink:"",
+                ctatext:""
+            },
+            {
+                target:"archive2",
+                title:"Clean Green Public Schools",
+                description:"Past Due Public Comment Deadline: December 8, 2023
+
+                <strong>Eligibility Guidelines for the Clean Green Public Schools Program by the New York State Energy Research and Development Authority (NYSERDA)</strong>
+
+                NYSERDA has developed the following eligibility guidelines to implement funding under the Clean Water, Clean Air and Green Jobs Environmental Bond Act of 2022 (Bond Act).
+
+                The Clean Green Schools Initiative Program will make Bond Act Funding available on a competitive basis to eligible public schools to implement construction projects that emphasize greenhouse gas emission reductions. This funding will help schools improve environmental sustainability and decarbonize school buildings, leading to improved air quality, reduced emissions, increased resiliency, and a pathway toward electrification.
+
+                The Bond Act requires that disadvantaged communities receive no less than 35% with the goal of 40% of the benefit of overall Bond Act funds ($4.2 billion). In line with this goal, NYSERDA will aim to ensure at least 40% of Clean Green Public Schools Program investments benefit disadvantaged communities.
+
+                The term disadvantaged communities shall mean the same definition used under the state's Climate Leadership and Community Protection Act: https://climate.ny.gov/Resources/Disadvantaged-Communities-Criteria.
+
+                Public schools located in disadvantaged communities and/or high need school districts, as defined by the New York State Education Department, will be eligible for the Clean Green Schools Initiative Program.
+
+                Eligible Project Specifications:
+                <ul>
+                <li> A completed energy master plan, decarbonization plan, energy study, or equivalent is required at the time of application.</li>
+                    <li>Projects must be shovel ready and sited at existing buildings.</li>
+                    <li>Funds are to be used in conjunction with all other available sources such as federal funds, utility incentives, tax credits, etc.</li>
+                    <li>Geographic distribution will be considered when awarding funds to ensure equitable investments across New York State.</li>
+                    <li>Greenhouse gas emission reductions projects and those that improve air quality impacts, including but not limited to:</li>
+                        <ul>
+                        <li>construction projects that decarbonize individual buildings or an overall portfolio of buildings;</li>
+                        <li>comprehensive building retrofits that impact energy consumption and overall building energy load;</li>
+                        <li>building electrification readiness projects such as hardening building envelope, ventilation upgrades and improvements and distribution system upgrades; and</li>
+                        <li>conversion of central heating and/or cooling plants to clean energy technologies such as heat pumps.</li>
+                        </ul>
+                <li> New energy technology projects or application of such technology that reduce fossil fuel (heating oil, natural gas, steam generated by fossil fuel, etc.) energy consumption.</li>
+                    <li>Building electrification projects, including but not limited to:</li>
+                        <ul>
+                        <li>building systems (e.g., kitchen equipment and domestic hot water heaters)</li>
+                        <li>electrification readiness projects such as high-performance building envelope (e.g., air sealing, insulation, window film)</li>
+                        <li>conversion of distribution systems (e.g., steam to hot water) to support potential future electrification; an</li>
+                        <li>Stand-alone renewable generation technology projects if previous energy efficiency projects have been completed and documented in the proposal.</li>
+                        </ul>
+                    <li>System conversion to natural gas or other fossil fuel and full system replacements to new fossil fuel-based systems are ineligible.</li>
+                    <li>For projects that include the installation of refrigerant containing equipment (such as chillers and heat pumps), the project designer must evaluate the feasibility of utilizing equipment that contains a natural or other refrigerant with a global warming potential (GWP) of less than 10 and install this equipment if deemed feasible.</li>
+                </ul>
+                NYSERDA will evaluate projects based on overall responsiveness and factors including project impact, project team and stakeholder commitment, project implementation and schedule, and clarity of budget.
+                ",
+                ctalink:"https://dec.ny.gov/news/environmental-notice-bulletin/2023-11-08/statewide-eligibility-guidelines-for-the-clean-green-public-schools-program",
+                ctatext:"View Public Comments"
+            },
+            {
+                target:"archive3",
+                title:"Public School Bus Electrification Program",
+                description:"Past Due Public Comment Deadline: September 1, 2023
+
+                <strong>Eligibility Guidelines for the Public School Bus Electrification Program by the New York State Energy Research Development Authority (NYSERDA)</strong>
+
+                NYSERDA has developed the following eligibility guidelines to implement funding under the Clean Water, Clean Air, and Green Jobs Environmental Bond Act of 2022 (Bond Act).
+
+                The Public School Bus Electrification Program is a point-of-sale rebate program that provides vouchers, or discounts, to school bus fleets (as defined below) across New York State that purchase or lease medium- and heavy-duty zero-emission battery electric (BEV) or hydrogen fuel cell electric (FCEV) school buses and associated charging infrastructure. Rebates will be disbursed directly to dealers to offset some or all of the incremental cost of eligible buses. Charging infrastructure incentives may be disbursed directly to fleets. Funding may also be made available for eligible fleets to develop fleet electrification plans to inform electric school bus purchases.
+
+                School buses and other vehicles must meet all current federal and New York State safety guidelines.
+
+                The Bond Act requires that disadvantaged communities shall receive no less than 35%, with the goal of 40%, of the benefit of total Bond Act funds ($4.2 billion). In line with this goal, NYSERDA will aim to ensure at least 40% of the Public School Bus Electrification Program benefits disadvantaged communities.
+
+                The term disadvantaged communities shall mean the same definition approved by the Climate Justice Working Group under the state's Climate Leadership and Community Protection Act.
+
+                Buses domiciled in or serving disadvantaged communities and/or high-need school districts will receive consideration for higher incentive amounts.
+
+                <strong>Eligible Project Specifications:</strong>
+
+                1. Vehicle
+                <ul>
+                <li> Vehicle must be a Class 3-8 Battery Electric Vehicle (BEV) or Fuel Cell Electric Vehicle (FCEV) used for P-12 pupil transportation.</li>
+                    <li>Vehicle must be purchased from a dealer approved to participate in the program. The dealer approval process will follow the same process documented in the NY Truck Voucher Incentive Program Implementation Manual.</li>
+                    <li>Vehicle, other than repowered vehicles, must be new, including the vehicle chassis and drivetrain.</li>
+                    <li>Model year of the new vehicle must be either one model year older, the same model year, or one model year newer compared to the calendar year in which the vehicle was purchased. The purchase of used vehicles are NOT eligible.</li>
+                <li> Repowered vehicles (vehicles with gasoline or diesel engines that are removed and replaced with battery-electric drivetrains) may be eligible for funding to cover some or all of the cost of the conversion to electric if the vehicle has an expected operational lifespan after repowering of at least seven (7) years.</li>
+                <li> Program funding may not be used to pay for the purchase or installation of fuel-fired heaters.</li>
+                    <li>Electric motor, drive train, and battery pack/fuel cell must be covered by a manufacturer's warranty.</li>
+                    <li>Additional requirements and/or incentives for vehicles regarding domestic content may be implemented.</li>
+                </ul>
+                2. Fleet
+                <ul>
+                    <li>New York State school bus owners / operators must purchase a new BEV or FCEV school bus or repower an existing school bus that has an existing gasoline or diesel engine to convert the bus to a BEV.</li>
+                    <li>School buses or associated charging infrastructure must be owned by either a:</li>
+                        <ul>
+                    <li> New York State public school district or other public entity that provides P-12 pupil transportation services;</li>
+                        <li>Contractor under contract with a New York State public school district; or</li>
+                        <li>Third party leasing a school bus to one of the above for at least the duration of required operation.</li>
+                        </ul>
+                    <li>School buses must average no less than 5,000 miles per year during the in-service period.</li>
+                    <li>School buses must operate 95% within New York State and 70% within the identified school district(s).</li>
+                    <li>School buses are required to have a minimum electric range of 100 miles.</li>
+                    <li>School buses are required to have a vendor-supplied battery warranty of at least 60 months or 75,000 miles.</li>
+                    <li>Funded school buses are required to include manufacturer/vendor repair support to occur within 48 hours of a repair request.</li>
+                <li> Additional limitations on combined funding with other grant/incentive programs may be identified and implemented through a request for project proposals.</li>
+                </ul>",
+                ctalink:"https://www.ny.gov/sites/default/files/2023-12/nyserda_response_eba_esb_comments.pdf",
+                ctatext:"View Public Comments"
+            },
+            {
+                target:"archive4",
+                title:"New York State Water Infrastructure Improvement Act (WIIA) and Intermunicipal Water Infrastructure Grant Program (IMG)",
+                description:"Past Due Public Comment Deadline: April 14, 2023
+
+                <strong>The New York State Environmental Facilities Corporation (NYS EFC) has developed the following eligibility guidelines to implement funding under the Clean Water, Clean Air, and Green Jobs Environmental Bond Act of 2022 (Bond Act).</strong>
+
+                These guidelines apply to financial assistance payments for municipal projects to reduce, avoid, or eliminate point and non-point source discharges to water as authorized by the New York State Water Improvement Infrastructure Act of 2017 and Public Authorities Law §1285-s (Intermunicipal Water Infrastructure Grant Program) pursuant to ECL § 58-0903(1)(e). Grant eligible critical water infrastructure projects include those that combat emerging contaminants such as PFOA, PFOS and 1,4 dioxane with system upgrades and innovative pilot technologies, along with those that address combined and/or sanitary sewer overflow impacts from extreme weather events, and those that combine green infrastructure and nature-based features to ensure climate resilient infrastructure.
+
+                <strong>New York State Water Infrastructure Improvement Act (WIIA)</strong>
+
+                Eligible projects include water quality infrastructure projects at municipally owned sewage treatment works or municipally owned public water systems for:
+                <ul>
+                    <li>Construction, replacement, or repair of infrastructure; and</li>
+                    <li>Compliance with environmental and public health laws and regulations related to water quality and climate adaptation.</li>
+                </ul>
+                <strong>Each WIIA project must meet the following criteria:</strong>
+                    <ul>
+                    <li>Result in construction for the requested scope;</li>
+                    <li>Not have started construction before the October 1 preceding the funding application deadline;</li>
+                    <li>Not have completed construction before the funding application deadline; and</li>
+                    <li>Include the applicable NYS EFC terms and conditions in contracts under construction.</li>
+                    </ul>
+                <strong>New York State Intermunicipal Water Infrastructure Grant Program (IMG)</strong>
+
+                Pursuant to the IMG, NYS EFC will provide grants for infrastructure projects to be undertaken by two or more cooperating municipalities for consolidation of infrastructure or services. IMG funding will be awarded for construction, replacement or repair of a drinking water or sewage treatment infrastructure project that serves multiple municipalities, such as shared water quality infrastructure that protects public health, the environment, or results in compliance with environmental and public health laws and regulations related to water quality and climate adaptation.
+
+                <strong>Each IMG project must meet the following criteria:</strong>
+                <ul>
+                    <li>Serve multiple municipalities;</li>
+                    <li>Be a shared drinking water or sewage treatment infrastructure project, such as:</li>
+                        <ul>
+                        <li>More than one municipality undertaking a capital improvement project jointly,</li>
+                        <li>Consolidation of intermunicipal facilities,</li>
+                        <li>Shared water quality infrastructure,</li>
+                        <li>Regional wastewater treatment facilities, or</li>
+                        <li>The interconnection of multiple municipal water systems;</li>
+                        </ul>
+                    <li>Have a valid and binding project Intermunicipal Agreement (IMA) between at least two cooperating municipalities related to financing of the IMG project that describes the proposed project, the role of each municipality, and the costs attributable to each municipality;</li>
+                    <li>Designate a lead municipality that applies on behalf of all cooperating municipalities;</li>
+                    <li>Result in construction for the requested scope;</li>
+                    <li>Not have started construction before the October 1 preceding the funding application deadline;</li>
+                    <li>Not have completed construction before the funding application deadline;</li>
+                    <li>Include the applicable NYS EFC terms and conditions in contracts under construction; and</li>
+                    <li>Not be for the construction of water infrastructure that exclusively supports residential or commercial development.</li>
+                </ul>
+                A WIIA grant or IMG grant is available only to a municipality, which is defined to include a county, city, town, village, district corporation, county or town improvement district, school district, Indian Nation or tribe recognized by the state or the United States with a reservation wholly or partly within the boundaries of New York State, any public benefit corporation or public authority established pursuant to the laws of New York or any agency of the State that is empowered to construct and operate a water quality infrastructure project.
+
+                NYS EFC will evaluate projects based on factors including protection of public health and water quality; governmental and community support; environmental justice consideration; and the readiness of the project to proceed. Disadvantaged communities will receive no less than 35 percent of the benefit of this funding.",
+                ctalink:"https://www.ny.gov/sites/default/files/2023-05/Bond_Act_EFC_Response_to_Comments.pdf",
+                ctatext:"View Public Comments"
             }
         ]
     })
-}} #}
+}}
 
 
-
-
-
-
-
-
-{# {{
-    stayupdated({
-        title:"Stay Updated",
-        description:"Sign up to receive updates on the Bond Act programs and news. ",
-        linktext:"Sign Up",
-        link:"https://public.govdelivery.com/accounts/NYSDEC/subscriber/new?topic_id=NYSDEC_162"
-    })
-}} #}
 
 
 {# {{
@@ -57,14 +228,6 @@ component: stats
         text:"back to top" 
     })
 }} #}
-
-
-
-
-
-
-
-
 
 
 {# 
