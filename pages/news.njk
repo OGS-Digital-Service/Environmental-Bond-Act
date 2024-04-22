@@ -4,11 +4,86 @@ title: News
 ---
 {% from '../_includes/_components.njk' import filtercard, card, button, stats, highlight, hero  %}
 
+
+
+{{
+    filtercard({
+        heading:"Recent News",
+        cards:[
+            {
+                agency:"Department of Environmental Conservation (DEC)",
+                title:"DEC Releases for Public Review and Comment Draft Eligibility Guidelines for Water Quality Improvement Project Program Grants for Municipal Stormwater Projects",
+                link:"https://dec.ny.gov/news/press-releases/2024/3/dec-releases-for-public-review-and-comment-draft-eligibility-guidelines-for-water-quality-improvement-project-program-grants-for-municipal-stormwater-projects",
+                date:"Mar 22, 2024" 
+            },
+            {
+                agency:"Environmental Facilities Corporation (EFC)",
+                title:"EFC Announces Draft Eligibility Guidelines to Launch New Green Resiliency Grant Program",
+                link:"https://efc.ny.gov/news/efc-announces-draft-eligibility-guidelines-launch-new-green-resiliency-grant-program",
+                date:"Mar 21, 2024" 
+            },
+            {
+                agency:"Department of Agriculture and Markets",
+                title:"Department of Agriculture and Markets Advances Bond Act Funded Programs to Support Farmers and Protect New York Watersheds",
+                link:"https://agriculture.ny.gov/news/department-agriculture-and-markets-advances-bond-act-funded-programs-support-farmers-and",
+                date:"Mar 14, 2024" 
+            },
+            {
+                agency:"Department of Environmental Conservation (DEC)",
+                title:"DEC Releases Environmental Bond Act Draft Eligibility Guidelines for Climate Smart Communities Grant Program Projects",
+                link:"https://dec.ny.gov/news/press-releases/2024/3/dec-releases-environmental-bond-act-draft-eligibility-guidelines-for-climate-smart-communities-grant-program-projects",
+                date:"Mar 13, 2024" 
+            },
+            {
+                agency:"Governor",
+                title:"Governor Hochul Announces Funding Now Available to Support Electric School Bus Charging Infrastructure
+published",
+                link:"https://www.governor.ny.gov/news/governor-hochul-announces-funding-now-available-support-electric-school-bus-charging",
+                date:"Mar 05, 2024" 
+            },
+            {
+                agency:"Department of Environmental Conservation (DEC)",
+                title:"DEC Releases Environmental Bond Act Draft Eligibility Guidelines to Support Planting 25 Million Trees by 2033
+published",
+                link:"https://dec.ny.gov/news/press-releases/2024/2/dec-releases-environmental-bond-act-draft-eligibility-guidelines-to-support-planting-25-million-trees-by-2033",
+                date:"Feb 13, 2024" 
+            }
+            
+        ]
+    })
+}}
+
+
+
+
+
+
+
+
+
 {{
     filtercard({
         heading:"Archive News",
         archive: true,
         cards:[
+            {
+                agency:"Governor",
+                title:"Governor Hochul Announces $100 Million in Environmental Bond Act Funding Now Available for Clean Green Schools",
+                link:"https://www.governor.ny.gov/news/governor-hochul-announces-100-million-environmental-bond-act-funding-now-available-clean-green",
+                date:"Jan 23, 2024" 
+            },
+            {
+                agency:"Governor",
+                title:"Governor Hochul Announces $13.1 Million to Support Construction of the Adirondack Rail Trail",
+                link:"https://www.governor.ny.gov/news/governor-hochul-announces-131-million-support-construction-adirondack-rail-trail",
+                date:"Jan 23, 2024" 
+            },
+            {
+                agency:"Governor",
+                title:"Governor Hochul Announces Investments in Long Island Resiliency Projects to Protect Communities from Extreme Weather published",
+                link:"https://www.governor.ny.gov/news/governor-hochul-announces-investments-long-island-resiliency-projects-protect-communities",
+                date:"Jan 22, 2024" 
+            },
             {
                 agency:"NYSERDA",
                 title:"Draft Eligibility Guidelines on Clean Green Schools Environmental Bond Act Now Available For Public Comment ",
