@@ -1,0 +1,1713 @@
+<!doctype html>
+<html lang="en">
+  <!-- If you're reading this: help us obi-wan can-coder, you're our only hope. Apply today: ogs.ny.gov/employment -->
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="News">
+    <meta name="generator" content="11ty/eleventy">    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400&display=swap" rel="stylesheet">
+<style>
+/* puuuush button - NYSDS JHK */
+.button-container {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px 0;
+    justify-content: center;
+}
+.nysds-button {
+    background: #154973;
+    padding:15px;
+    margin: 10px 25px;
+    border-radius: 15px;
+    color: #fff;
+    min-width: 250px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+    display: block;
+    text-decoration: none;
+    appearance: none;
+    border: none;
+}
+
+.nysds-button:hover {
+    background:#000;
+    color:#fff;
+    text-decoration: underline;
+}
+
+.nysds-button:focus {
+    background:#000;
+    color:#fff;
+    text-decoration: underline;
+}
+
+/* cards - NYSDS JHK */
+
+.cards-container {
+    display: flex;
+    flex-direction: column;
+    margin: 50px 0px;
+    
+}
+
+.cards-heading {
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 12px;
+    width: 100%;
+    font-family: 'Figtree', sans-serif;
+}
+
+.cards-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+
+.nysds-card {
+    width: 320px;
+    margin: 1.5rem 1rem;
+    background: #ededed;
+    border: 1px solid #d0d0ce;
+    border-radius: 15px;
+}
+
+.card-image {
+    border-radius: 15px;
+    object-fit: cover;
+    height: 220px;
+    width: 100%;
+    display: block;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card-title {
+    font-size: 18px;
+    margin: 0 25px 0 0;
+    font-weight: bold;
+    font-family: 'Figtree', sans-serif;
+}
+
+.card-link {
+    color: #004DD1;
+    text-decoration: none;
+    font-family: 'Figtree', sans-serif;
+}
+
+.card-link:hover {
+    color: #000;
+    text-decoration: underline;
+}
+
+.card-link:focus {
+    color: #000;
+    text-decoration: underline;
+}
+
+.card-description {
+    font-size: 16px;
+    font-family: 'Figtree', sans-serif;
+    margin-top: 15px;
+}
+
+.cards-intro {
+    font-size: 17px;
+    margin: 15px 0px;
+    text-align: center;
+    font-family: 'Figtree', sans-serif;
+}
+
+
+/* media queries */
+@media (min-width: 992px) {
+    .cards-wrapper {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .card-content {
+        padding: 25px;
+    }
+    
+}
+/* filtercards - NYSDS JHK */
+.filtercards {
+    width: 100%;
+}
+.filtercard-heading {
+    font-size: 28px;
+    font-weight: bolder;
+    text-align: center;
+    margin: 25px 0px 0px;
+}
+.filtercard-list {
+    list-style-type: none;
+    padding: 20px;
+}
+.filtercard-list-item {
+    background: #ededed;
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    margin: 15px 5px;
+    border: 1px solid #d0d0ce;
+    border-radius: 15px;
+}
+.filtercard-top {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.filtercard-category {
+    font-size: 14px;
+    margin: 0px;
+    padding-bottom: 5px;
+}
+.filtercard-agency {
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    background: #457AA5;
+    color: #fff;
+    width: fit-content;
+    padding: 5px;
+    border-radius: 5px;
+}
+.filtercard-divider {
+    width: 30px;
+    border-bottom: 1px solid #d0d0ce;
+    margin:10px 0 15px;
+}
+.filtercard-link {
+    color: #004DD1;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 1.15em;
+    text-decoration: none;
+}
+.filtercard-link:hover {
+    color:#000;
+    text-decoration: underline;
+}
+.filtercard-link:focus {
+    color:#000;
+    text-decoration: underline;
+}
+.filtercard-description {
+    margin: 15px 0px 0px;
+}
+
+.filtercard-date {
+    font-size: 12px;
+    font-weight: bold;
+    margin-top: 14px;
+}
+
+/* filtercard table */
+.filter-archive {
+    width: 100%;
+    overflow-x: auto;
+    
+}
+
+.filter-archive-table {
+    border: 1px solid #000;
+    margin: 10px;
+}
+
+.filter-table-heading {
+    margin: 25px 10px;
+    font-weight: bold;
+}
+
+.filter-archive-table th {
+    border-right: 1px solid #000;
+    text-align: center;
+    padding: 5px;
+    background-color: #62666A;
+    color: #fff;
+}
+
+.filter-table-title {
+    min-width: 250px;
+}
+
+.filter-table-date {
+    min-width: 120px;
+}
+
+.filter-archive-table td {
+    border: 1px solid #000;
+    padding: 5px;
+}
+
+.filter-archive-table-row:nth-child(even) {
+    background-color: #ededed;
+}
+/* media queries */
+@media (min-width: 992px) {
+    /* filtercard */
+    .filtercards {
+        margin: 0 auto;
+    }
+
+    .filtercard-top {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .filtercard-category {
+        padding-bottom: 0;
+    }
+}
+
+
+.global-nav {
+    background: #154973 !important;
+    display: flex;
+    min-height: 80px;
+    flex-direction: column;
+}
+
+.global-nav-menu {
+    float: left !important;
+    margin-left: 25px;
+}
+
+.global-nav-menu:hover {
+    background: none !important;
+}
+
+.global-nav-title {
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    margin:0 20px 0 0;
+}
+
+.global-nav-title a {
+    color: #fff;
+}
+
+.global-nav-links {
+    display: flex;
+    margin-bottom: 0px;
+}
+
+.global-nav-links a {
+    color:#fff;
+    font-weight: bold;
+    padding: 0 40px;
+    text-transform: uppercase;
+}
+
+.global-nav-links a:hover {
+    text-decoration: underline;
+}
+
+.global-nav-links a:focus {
+    text-decoration: underline;
+}
+
+.global-nav-link-container {
+    display: flex;
+    align-items: center;
+}
+
+.global-nav-list-desktop {
+    display: none;
+}
+
+.global-nav-list-mobile {
+    display: flex;
+}
+
+.dropdown-menu {
+    background:#154973;
+    color: #fff;
+    border: none;
+    box-shadow: none;
+    border-radius: 0px;
+    width: 100%;
+}
+
+.dropdown-menu li {
+    padding: 10px 0px
+}
+
+.dropdown-menu li a {
+    color: #fff;
+    font-weight: bold;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.dropdown-menu li a:hover {
+    color: #face00;
+    background: transparent;
+    text-decoration: underline;
+}
+
+.dropdown-menu li a:focus {
+    color: #face00;
+    background: transparent;
+    text-decoration: underline;
+}
+
+.navbar-toggle {
+    display: block;
+}
+
+.global-nav-inner {
+    display: flex;
+    align-content: center;
+    min-height: 80px;
+}
+
+.global-nav-links {
+    flex-direction: column;
+    width: 100%
+}
+
+.global-nav-links li {
+    padding: 20px 0px;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+
+.global-nav-links li a {
+    width: 100%;
+    display: block;
+}
+
+.row-collapse {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+@media (min-width: 992px) {
+    .global-nav-list-desktop {
+        display: flex;
+    }
+    
+    .global-nav-list-mobile {
+        display: none;
+    }
+
+    .global-nav {
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .global-nav-inner {
+        display: flex;
+        min-width: fit-content;
+        margin-left: 45px;
+        align-content: center;
+    }
+
+    .global-nav-links {
+        flex-direction: row;
+    }
+
+    .global-nav-links li {
+        padding: 20px 0px;
+        border-bottom: none;
+    }
+
+    #global-navigation {
+        width: 100%;
+        display: block;
+    }
+
+    .unav-links li {
+        border-bottom: none;
+        margin-right: 20px;
+    }
+
+    .global-nav-links a {
+        padding: 0 25px;
+    }
+}
+
+@media (max-width: 400px) {
+    .global-nav {
+        min-height: 10px;
+    }
+
+    .global-nav-inner {
+        min-height: 10px;
+    }
+
+    .global-nav-links li {
+        padding: 2px 0px;
+        border-bottom: none;
+    }
+
+}
+.unav-trusted-banner {
+ display:flex;
+ padding-left:27px;
+ align-items: center;
+ background: #fff;
+}
+
+.unav-trusted-banner a {
+    font-size: 11px;
+    color: #154973;
+    margin-left: 10px;
+}
+
+.unav-trusted-banner a:hover {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.unav-trusted-banner a:focus {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.unav-trusted-logo {
+    height: 20px;
+    margin: 5px
+}
+
+#unav-menu {
+    display: none;
+}
+
+.unav-hide {
+    display: none;
+}
+
+.caret-large {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: 2px;
+    vertical-align: middle;
+    border-top: 8px solid;
+    border-right: 8px solid transparent;
+    border-left: 8px solid transparent;
+    color: #000;
+}
+
+.navbar-inverse .navbar-toggle {
+    border-color: #154973;
+}
+
+.navbar-inverse .navbar-toggle:hover {
+    border-color: #fff;
+}
+
+.navbar-inverse .navbar-toggle:focus {
+    border-color: #fff;
+    background: none;
+}
+
+.navbar-default {
+    border-bottom: none;
+    background: #fff;
+    border-top: none;
+}
+
+.navbar-collapse {
+    border-top: none;
+}
+
+.navbar {
+    margin-bottom: 0;
+    border-radius: 0;
+    border: none;
+}
+
+.site-logo {
+    margin-left:40px;
+    padding: 0px;
+    z-index: 2000;
+}
+
+.site-logo img {
+    padding-right: 20px;
+    margin-right: 5px;
+    border-right: 1px solid #ccc;
+}
+
+.unav-container {
+    padding: 10px 0px;
+    height: 90px;
+    background: #fff;
+    border-bottom: none;
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+}
+
+.unav-links {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    padding-left: 30px;
+}
+
+.unav-links li {
+    padding: 10px;
+    margin: 10px;
+    font-size: 1.25em;
+    border-bottom: 1px solid #ccc;
+    margin-right: 50px;
+}
+
+.unav-links li a {
+    color: #000;
+}
+
+.unav-links li a:hover {
+    color: #0f739d;
+    text-decoration: underline;
+}
+
+.unav-links li a:focus {
+    color: #0f739d;
+    text-decoration: underline;
+}
+
+.unav-logo-link:focus { 
+    border: 1px solid #154973;
+
+}
+
+.nygov-links {
+    color: #0f739d;
+}
+
+.nygov-gold {
+    color: #FACE00;
+}
+
+@media (min-width: 992px) {
+    .navbar-toggle {
+        display: none;
+    }
+
+    .dropdown-menu {
+        width: initial;
+    }
+
+    .dropdown-menu li a {
+        margin-left: auto;
+        text-align: initial;
+    }
+
+    .row-collapse {
+        display: none !important;
+    }
+
+    .unav-links {
+        flex-direction: row;
+    }
+
+    .unav-links li {
+        border-bottom:none;
+    }
+
+    .site-logo {
+        margin-left:20px;
+    }
+
+    .site-logo img {
+        padding-right: 20px;
+        padding-left:30px;
+    }
+
+    #unav-menu {
+        display: block;
+        background: #fff;
+        margin-left: 40px;
+    }
+
+    .unav-mobile-button {
+        margin-top: 15px;
+    }
+
+    #unav-menu-mobile {
+        margin-left:30px;
+    }
+    .unav-hide {
+        display: block;
+    }
+    .unav-trusted-banner {
+        display: none;
+    }
+}
+/* stats cards - NYSDS JHK */
+
+.stats {
+    display: flex;
+    flex-direction: column;
+    margin: 30px 0px;
+}
+
+.stats-heading {
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 12px;
+    width: 100%;
+    font-family: 'Figtree', sans-serif;
+}
+
+.stats-subhead {
+    font-size: 24px !important;
+}
+
+.stats-intro {
+    font-size: 17px;
+    margin: 15px 0px;
+    text-align: center;
+    font-family: 'Figtree', sans-serif;
+}
+
+.stats-outro {
+    font-size: 16px;
+    margin: 25px 0px;
+    text-align: center;
+    font-family: 'Figtree', sans-serif;
+}
+
+.stats-list {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin:0;
+    padding: 0;
+}
+
+.stats-card {
+    width: 260px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 10px;
+    border-radius: 15px;
+    margin: 10px;
+    text-align: center;
+    min-height: 250px;
+}
+
+.stats-cta {
+    color: #fff;
+    background-color: #154973;
+    font-weight: bold;
+    margin: 0 auto;
+    min-width: 250px;
+    text-align: center;
+    padding:15px;
+    border-radius: 15px;
+    text-decoration: none !important;
+    text-transform: uppercase;
+    margin-top: 30px;
+}
+
+.stats-cta:hover {
+    background-color: #000;
+    color: #fff;
+    text-decoration: underline !important;
+} 
+
+.stats-cta:focus {
+    background-color: #000;
+    color: #fff;
+    text-decoration: underline !important;
+} 
+
+.stats-blue {
+    background-color: #154973;
+    color: #fff;
+    fill: #fff;
+}
+
+.stats-gray {
+    background-color: #d0d0ce;
+    color: #000;
+    fill: #000;
+}
+
+.stats-the {
+    font-size: 2.1em;
+    font-weight: bold;
+    padding: 10px 0 10px 0;
+    margin: 0;
+    font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.stats-the-blue {
+    color: #FACE00;
+}
+
+.stats-the-gray {
+    color: #154973;
+}
+
+.stats-description {
+    font-size: 1em;
+    margin: 0px;
+    text-transform: uppercase;
+    line-height: 1.375em;
+    overflow: hidden;
+    letter-spacing: 1px;
+    font-family: Oswald;
+}
+
+/* media queries */
+@media (min-width: 992px) {
+    .stats-list {
+        flex-direction: row;
+    }
+
+    .stats-card {
+        width: 23%;
+    }
+}
+.global-footer {
+    background: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+    margin-top: 25px;
+}
+
+.global-logo {
+    display: block;
+    height: 50px;
+}
+
+.global-list {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.global-list li {
+    margin-top: 25px;
+}
+
+.global-links {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 25px;
+}
+
+.global-links:hover {
+    color: #FACE00;
+    text-decoration: underline;
+}
+
+.global-links:focus {
+    color: #FACE00;
+    text-decoration: underline;
+}
+
+@media (min-width: 992px) {
+    .global-footer {
+        flex-direction: row;
+    }
+    .global-list {
+        flex-direction: row;
+    }
+    .global-list li {
+        margin-top: 0;
+    }
+}
+.highlight-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-bottom: 35px;
+}
+
+.highlight-h2 {
+    padding-top: 35px;
+    display: block;
+    width: 100%;
+}
+
+.highlight-title {
+    font-family: Oswald, sans-serif;
+    font-size: 0.55em;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: block;
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+.highlight-heading {
+    font-family: 'Figtree', sans-serif;
+    font-size: 1.05em;
+    font-weight: bold;
+    display: block;
+    text-align: center;
+    color: #154973;
+    margin-bottom: 20px;
+}
+
+.highlight-description {
+    text-align: center;
+    font-size: 16px;
+}
+
+.highlight-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.button-card {
+    display: flex;
+    flex-direction: column;
+    max-width: 275px;
+    margin: 15px 30px;
+}
+
+.button-card-heading {
+    color: #000;
+    font-weight: bold;
+    font-size: 1.5em;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.button-card-description {
+    text-align: center;
+    min-height: 100px;
+}
+
+.highlight-link {
+    text-decoration: none !important;
+    min-width: 250px;
+    padding: 15px;
+    border: 1px solid #000;
+    border-radius: 15px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    color:#000;
+    margin: 20px 0px;
+}
+
+.highlight-link:hover {
+    background-color: #000;
+    color: #fff;
+    border: 1px solid #fff;
+    text-decoration: underline !important;
+}
+
+.highlight-link:focus {
+    background-color: #000;
+    color: #fff;
+    border: 1px solid #fff;
+    text-decoration: underline !important;
+}
+.nysds-hero-container {
+    width: 100%;
+    display: flex;
+    align-items: end;
+    min-height: 400px;
+}
+
+.nysds-hero-background-image {
+     background-image: url(); /* PUT THE IMAGE URL HERE - replace the current full url with the new one */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+.nysds-hero-information {
+    width: 100%;
+    color: #fff;
+    padding: 35px 20px;
+    background-color: #154973;
+}
+
+.nysds-hero-title {
+    font-size: 28px;
+    line-height: 1.15em;
+    font-weight: 800;
+    font-family: 'Figtree', sans-serif;
+    margin: 0px;
+}
+
+.nysds-hero-headline {
+    color:#FACE00;
+    margin-bottom: 10px;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight:bold;
+}
+
+.nysds-hero-description {
+    font-size: 16px;
+    line-height: 25px;
+    margin: 20px 0 0;
+}
+
+.nysds-hero-links-list {
+    list-style-type: "";
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+
+.nysds-hero-links-list li {
+    display: flex;
+    align-items: center;
+    margin-right: 45px;
+    margin-top: 20px;
+}
+
+ .nysds-hero-link {
+    color: #FACE00;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: underline;
+    font-size: 14px;
+}
+
+.nysds-hero-link:hover {
+    color: #FACE00;
+    text-decoration-thickness: 3px;
+}
+
+.nysds-hero-link:focus {
+    color: #FACE00;
+    text-decoration-thickness: 3px;
+    outline-offset: 4px;
+}
+
+.nysds-hero-link-arrow {
+    display: block;
+    height: 16px;
+    width: 16px;
+    margin: 0 5px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3C!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--%3E%3Cpath fill='%23FACE00' d='M334.5 414c8.8 3.8 19 2 26-4.6l144-136c4.8-4.5 7.5-10.8 7.5-17.4s-2.7-12.9-7.5-17.4l-144-136c-7-6.6-17.2-8.4-26-4.6s-14.5 12.5-14.5 22l0 72L32 192c-17.7 0-32 14.3-32 32l0 64c0 17.7 14.3 32 32 32l288 0 0 72c0 9.6 5.7 18.2 14.5 22z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+}
+
+.nysds-hero-link-arrow:dir(rtl) {
+    rotate: 180deg;
+}
+
+@media (min-width: 992px) {
+    .nysds-hero-information {
+        margin-top: 0px;
+        margin: 0px 60px;
+        width: 580px;
+        padding: 45px 45px;
+        border-radius: 30px;
+    }
+
+    .nysds-hero-container {
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    .nysds-hero-description {
+        font-size: 18px;
+    }
+
+    .nysds-hero-title {
+        font-size: 36px;
+    }
+
+    .nysds-hero-information {
+        padding: 45px 35px;
+    }
+
+    .nysds-hero-links-list {
+        flex-direction: row;
+    }
+
+    .nysds-hero-links-list li {
+        margin-top: 35px;
+    }
+}
+
+/* category tiles - NYSDS JHK */
+
+.category {
+    display: flex;
+    flex-direction: column;
+    margin: 30px 0px;
+}
+
+.category-heading {
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 12px;
+    width: 100%;
+    font-family: 'Figtree', sans-serif;
+}
+
+.category-subhead {
+    font-size: 24px !important;
+}
+
+.category-intro {
+    font-size: 17px;
+    margin: 15px 0px;
+    text-align: center;
+    font-family: 'Figtree', sans-serif;
+}
+
+.category-list {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin:0;
+    padding: 0;
+}
+
+.category-tile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    align-self: stretch;
+    width: 250px;
+    border-radius: 15px;
+    margin: 10px;
+    background-color: #154973;
+    
+}
+
+.category-link {
+    height: 100%;
+    width: 100%;
+    align-content: center;
+    padding: 50px 20px;
+    font-size: 1em;
+    font-weight: bold;
+    text-decoration: none !important;
+    color: #fff;
+    border-radius: 15px;
+    
+}
+
+.category-link:hover {
+    background-color: #000;
+    color: #fff;
+    text-decoration: underline !important;
+}
+
+.category-link:focus {
+    background-color: #000;
+    color: #fff;
+    text-decoration: underline !important;
+}
+
+/* media queries */
+@media (min-width: 992px) {
+    .category-tile {
+        flex: 1;
+        width: 25%;
+    }
+}
+/* accordion - NYSDS JHK */
+.accordion {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #d0d0ce;
+    border-radius: 15px;
+    background: none;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 15px;
+}
+
+.accordion-headline {
+    font-family: Oswald, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: block;
+    text-align: center;
+    padding-bottom: 15px;
+    color:#154973;
+}
+
+.accordion-button {
+    background: none;
+    padding: 20px;
+    border: 0;
+    text-align: left;
+    border-top:2px solid #d0d0ce;
+    border-bottom: none;
+    color: #154973;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.accordion-button-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 448 512' width='18' height='18' %3E%3C!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--%3E%3Cpath d='M416 208H272V64c0-17.7-14.3-32-32-32h-32c-17.7 0-32 14.3-32 32v144H32c-17.7 0-32 14.3-32 32v32c0 17.7 14.3 32 32 32h144v144c0 17.7 14.3 32 32 32h32c17.7 0 32-14.3 32-32V304h144c17.7 0 32-14.3 32-32v-32c0-17.7-14.3-32-32-32z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    height: 18px;
+    width: 18px;
+    display: inline-block;
+    color: #154973;
+}
+
+.accordion-button:first-of-type {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-top: none;
+    border-bottom: none;
+}
+
+.accordion-button:last-of-type {
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-top: 2px solid #d0d0ce;
+    border-bottom: none;
+}
+
+.accordion-button:hover {
+    background-color: #ededed;
+    text-decoration: underline;
+}
+
+.accordion-button:focus {
+    background-color: #ededed;
+    text-decoration: underline; 
+    outline: 3px solid #FACE00;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.accordion-button:active {
+    background-color: #ededed;
+    text-decoration: underline; 
+    outline: 3px solid #FACE00;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.accordion-description {
+    font-size: 16px;
+    font-weight: normal;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.accordion-cta {
+    font-size: 14px;
+    font-weight: bold;
+    text-align: right;
+    justify-content: flex-end;
+    display: flex;   
+    align-items: center;
+}
+
+.accordion-cta:hover {
+    color: #000;
+    outline: 1px #FACE00;
+}
+
+.accordion-cta:focus {
+    color: #000;
+    outline: 1px #FACE00;
+}
+
+.accordion-cta-arrow {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 448 512' width='20' height='20'%3E%3C!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--%3E%3Cpath d='M313.9 216H12c-6.6 0-12 5.4-12 12v56c0 6.6 5.4 12 12 12h301.9v46.1c0 21.4 25.9 32.1 41 17l86.1-86.1c9.4-9.4 9.4-24.6 0-33.9l-86.1-86.1c-15.1-15.1-41-4.4-41 17V216z'/%3E%3C/svg%3E");
+    height: 20px;
+    width: 20px;
+    display: inline-block;
+    margin-left: 5px;
+    filter: invert(17%) sepia(100%) saturate(6232%) hue-rotate(214deg) brightness(91%) contrast(101%);
+}
+
+
+/* media queries */
+@media (min-width: 992px) {
+    
+    
+}
+
+/* back to top - NYSDS JHK */
+.back-to-top {
+    position: fixed;
+    bottom: 17%;
+    right: 5px;
+    z-index: 23000;
+}
+
+.back-to-top-button {
+    font-size: 12px;
+    background-color: #154973;
+    padding: 10px;
+    color: #fff;
+    border: 2px solid #fff;
+    text-transform: uppercase;
+
+}
+
+.back-to-top-button:hover {
+    background-color: #000;
+    color: #fff;
+    border: 2px solid #face00;
+}
+
+.back-to-top-button:focus {
+    background-color: #000;
+    color: #fff;
+    border: 2px solid #face00;
+}
+
+
+/* media queries */
+@media (min-width: 992px) {
+    .back-to-top {
+        bottom: 60px;
+        
+    }
+    
+    .back-to-top-button {
+        padding: 10px;
+    }
+}
+/* stay updated - NYSDS JHK */
+.stay-updated {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 40px;
+}
+
+.stay-updated-icon {
+    background-image: url("data:image/svg+xml,%3Csvg version='1.1' width='40' height='40' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 100 100' style='enable-background:new 0 0 100 100;' xml:space='preserve'%3E%3Cstyle type='text/css'%3E .st0%7Bfill:none;stroke:%23000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;%7D%0A%3C/style%3E%3Cpath class='st0' d='M22.01,36.91h-4.68h-4.68c-3.21,0-5.81,2.6-5.81,5.81v12.72c0,3.21,2.6,5.81,5.81,5.81h4.68h4.68h5.81v-5.81 V42.72v-5.81H22.01z'/%3E%3Crect x='27.83' y='36.91' class='st0' width='7.98' height='24.35'/%3E%3Cpolygon class='st0' points='66.85,74.76 35.81,61.26 35.81,36.91 66.85,23.4 '/%3E%3Cpath class='st0' d='M66.85,42.41c3.69,0,6.67,2.99,6.67,6.67c0,3.69-2.99,6.67-6.67,6.67'/%3E%3Cpolygon class='st0' points='23.87,79.36 16.44,79.36 14.19,61.26 21.62,61.26 '/%3E%3Cline class='st0' x1='79.78' y1='49.08' x2='93.18' y2='49.08'/%3E%3Cline class='st0' x1='76.12' y1='57.97' x2='85.82' y2='67.21'/%3E%3Cline class='st0' x1='76.45' y1='40.06' x2='86.13' y2='30.82'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    filter:invert(0%);
+    width: 40px;
+    height: 40px;
+}
+
+.stay-updated-heading {
+    font-weight: bold;
+    font-family: 'Figtree', sans-serif;
+    margin: 10px 35px;
+    font-size:1.85em;
+}
+
+.stay-updated-description {
+    margin: 10px 40px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.stay-updated-cta {
+    margin-left: 0;
+}
+
+.stay-updated-link {
+    display: block;
+    border: 1px solid #000;
+    color: #000;
+    font-weight: bold;
+    text-transform:uppercase;
+    padding: 10px;
+    border-radius: 15px;
+    min-width: 150px;
+    text-align: center;
+    margin: 10px;
+    font-size: 14px;
+    text-decoration: none !important;
+}
+
+.stay-updated-link:hover {
+    text-decoration: underline !important;
+    background: #000;
+    color: #fff;
+} 
+
+.stay-updated-link:focus {
+    text-decoration: underline !important;
+    background: #000;
+    color: #fff;
+} 
+
+/* media queries */
+@media (min-width: 992px) {
+    .stay-updated {
+        min-height: 50px;
+        flex-direction: row;
+    }
+    .stay-updated-cta {
+        margin-left: 20px;
+    }
+}
+</style>
+
+
+    <style>
+      .bootstrap-page-container {
+        max-width: 1170px;
+        margin: 0 auto;
+      }
+    </style>
+    <title>News</title>
+  </head>
+  <body class="">
+  <a href="#main-site-content-for-skiplink" class="sr-only focus:not-sr-only text-blue-700 underline">Skip to Main Content</a>
+    <main class="" id="main-site-content-for-skiplink">
+      
+      <!-- universal nav area -->
+<div class="unav-trusted-banner">
+        <img src="https://static-assets.ny.gov/sites/all/themes/ny_gov/images/nygov-logo.png" alt="State of New York Logo" class="unav-trusted-logo">
+        <a href="https://ny.gov" class=""> An Official Website of the State of New York </a>
+</div>
+<nav class="navbar navbar-default navbar-static-top container-fluid unav-hide" aria-label="State of new york universal Navigation">
+    <div class="row unav-container" >
+          <div class="site-logo col-sm-1 col-xs-5">
+              <a href="https://www.ny.gov" class="unav-logo-link">
+              <span class="sr-only"> State of New York Website </span>
+              <img src="https://static-assets.ny.gov/sites/all/themes/ny_gov/images/nygov-logo.png" alt="State of New York Logo">
+               </a>
+          </div>
+          <div class="col-md-6 col-xs-4" id="unav-menu">
+              <ul class="list-unstyled unav-links">
+                  <li class="">
+                      <a class="" href="https://www.ny.gov/services">Services</a>
+                  </li>
+                  <li class="">
+                      <a class="" href="https://www.governor.ny.gov/news">News</a>
+                  </li>
+                  <li class="">
+                      <a class="" href="https://www.ny.gov/agencies">Government</a>
+                  </li>
+              </ul>
+          </div>
+          <div class="col-md-6">
+              <button class="navbar-toggle collapsed unav-mobile-button" data-toggle="collapse" data-target="#unav-menu-mobile">
+                  <span class="sr-only">Toggle new york state navigation</span>
+                  <span class="caret-large"></span>
+              </button>
+          </div>
+    </div>
+    <div class="row row-collapse">
+       <div class=" collapse" id="unav-menu-mobile">
+              <ul class="list-unstyled unav-links">
+                  <li class="">
+                      <a class="" href="https://www.ny.gov/services">Services</a>
+                  </li>
+                  <li class="">
+                      <a class="" href="https://www.governor.ny.gov/news">News</a>
+                  </li>
+                  <li class="">
+                      <a class="" href="https://www.ny.gov/agencies">Government</a>
+                  </li>
+              </ul>
+          </div>
+      </div>
+  </nav> 
+       <!-- global nav area -->
+  <nav class="navbar navbar-inverse global-nav" role="navigation" aria-label="Hub Navigation">
+    <div class="global-nav-inner">
+      <button class="navbar-toggle global-nav-menu" data-toggle="collapse" data-target="#global-navigation">
+        <span class="sr-only">Toggle hub navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <h1 class="global-nav-title">
+          <a href="/"> <span class="nygov-gold">Environmental</span> Bond Act</a>
+      </h1>
+    </div>
+    <div class="collapse" id="global-navigation">
+        <div class="navbar global-nav-link-container">
+          <ul class="list-unstyled global-nav-links global-nav-list-desktop">
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="" role="button">Funding <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="/pages/funding-opportunities">Find Funding</a></li>
+                    <li><a href="/pages/funding-overview" >Funding Overview</a></li>
+                    <li><a href="/pages/funding-resources" >Funding Resources</a></li>
+                </ul>
+            </li>
+            <li><a href="/pages/projects" >Projects</a></li>
+            <li><a href="/pages/priorities" >Priorities</a></li>
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="" role="button">Resources <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="/pages/resources-for-resilience">Resources for Resilience</a></li>
+                  <li><a href="/pages/faq">Frequently Asked Questions</a></li>
+                  <li><a href="/pages/archived-eligibility-guidelines">Archived Eligibility Guidelines</a></li>
+                  <li><a href="https://www.nysenate.gov/legislation/laws/ENV/A58">Read the Act</a></li>
+                </ul>
+            </li>
+            <li><a href="/pages/news">News</a></li>
+            
+          </ul>
+          <ul class="list-unstyled global-nav-links global-nav-list-mobile">
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="" role="button">Funding <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="/pages/funding-opportunities" data-toggle="collapse" data-target="#global-navigation">Find Funding</a></li>
+                    <li><a href="/pages/funding-overview" data-toggle="collapse" data-target="#global-navigation">Funding Overview</a></li>
+                     <li><a href="/pages/funding-resources" data-toggle="collapse" data-target="#global-navigation">Funding Resources</a></li>
+                </ul>
+            </li>
+            <li><a href="/pages/projects" data-toggle="collapse" data-target="#global-navigation">Projects</a></li>
+            <li><a href="/pages/priorities" data-toggle="collapse" data-target="#global-navigation">Priorities</a></li>
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="" role="button">Resources <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="/pages/resources-for-resilience" data-toggle="collapse" data-target="#global-navigation">Resources for Resilience</a></li>
+                  <li><a href="/pages/faq" data-toggle="collapse" data-target="#global-navigation">Frequently Asked Questions</a></li>
+                  <li><a href="/pages/archived-eligibility-guidelines" data-toggle="collapse" data-target="#global-navigation">Archived Eligibility Guidelines</a></li>
+                  <li><a href="https://www.nysenate.gov/legislation/laws/ENV/A58">Read the Act</a></li>
+                </ul>
+            </li>
+            <li><a href="/pages/news" data-toggle="collapse" data-target="#global-navigation">News</a></li>
+          </ul>
+        
+        </div>
+    </div>
+  </nav> 
+      <div class="bootstrap-page-container">
+    
+
+
+
+
+<div class="filter-archive">
+    <h3 class="filter-table-heading"> Archive News</h3>
+    <table class="filter-archive-table">
+        <caption class="sr-only">Archive News
+            </caption>
+        <thead>
+            <tr class="filter-archive-table-header">
+                
+                <th  scope="col" class="filter-table-title">Title</th>
+                <th  scope="col" class="filter-table-date">Published Date</th>
+                <th scope="col" >Agency</th>
+            </tr>
+        </thead>
+        <tbody>
+        
+            <tr class="filter-archive-table-row">
+                
+                <td>
+                    <a href="https://www.nyserda.ny.gov/About/Newsroom/2023-Announcements/2023-11-8-NYSERDA-Announces-Release-of-Eligibility-Guidelines-to-Advance-Clean-Green-Schools" class="filter-archive-link">Draft Eligibility Guidelines on Clean Green Schools Environmental Bond Act Now Available For Public Comment </a>
+                </td>
+                <td>Nov 08, 2023</td>
+                <td>NYSERDA</td>
+            </tr>
+        
+            <tr class="filter-archive-table-row">
+                
+                <td>
+                    <a href="https://www.ny.gov/sites/default/files/2023-11/NYSERDA_Response_EBA_ESB_comments.pdf" class="filter-archive-link">NYSERDA Responds to Public Comments on the Draft Eligibility Guidelines for the Public School Bus Electrification Program </a>
+                </td>
+                <td>October 01, 2023</td>
+                <td>NYSERDA</td>
+            </tr>
+        
+            <tr class="filter-archive-table-row">
+                
+                <td>
+                    <a href="https://www.governor.ny.gov/news/governor-hochul-announces-100-million-available-zero-emission-school-buses" class="filter-archive-link">Governor Hochul Announces $100 Million Available for Zero-Emission School Buses</a>
+                </td>
+                <td>Sep 28, 2023</td>
+                <td>Governor</td>
+            </tr>
+        
+            <tr class="filter-archive-table-row">
+                
+                <td>
+                    <a href="https://dec.ny.gov/news/press-releases/2023/9/new-york-state-extends-deadline-for-clean-water-clean-air-and-green-jobs" class="filter-archive-link">New York State Extends Deadline for Clean Water, Clean Air and Green Jobs Environmental Bond Act Project Ideas Survey </a>
+                </td>
+                <td>Sep 13, 2023</td>
+                <td>Department of Environmental Conservation (DEC)</td>
+            </tr>
+        
+            <tr class="filter-archive-table-row">
+                
+                <td>
+                    <a href="https://www.governor.ny.gov/news/governor-hochul-celebrates-conclusion-clean-water-clean-air-and-green-jobs-environmental-bond" class="filter-archive-link">Governor Hochul Celebrates Conclusion of Clean Water, Clean Air and Green Jobs Environmental Bond Act Listening Tour </a>
+                </td>
+                <td>Aug 25, 2023</td>
+                <td>Governor</td>
+            </tr>
+        
+            <tr class="filter-archive-table-row">
+                
+                <td>
+                    <a href="https://hcr.ny.gov/news/governor-hochul-pledges-additional-3-million-emergency-assistance-homeowners-hudson-valley" class="filter-archive-link">Governor Hochul Pledges Additional $3 Million Emergency Assistance for Homeowners in Hudson Valley, North Country, and Finger Lakes Regions Impacted by Recent Flooding </a>
+                </td>
+                <td>Aug 09, 2023</td>
+                <td>Homes and Community Renewal</td>
+            </tr>
+        
+            <tr class="filter-archive-table-row">
+                
+                <td>
+                    <a href="https://www.nyserda.ny.gov/About/Newsroom/2023-Announcements/2023-08-03-Draft-Eligibility-Guidelines-Announced-To-Advance-Zero-Emission-School-Bus-Envir" class="filter-archive-link">NYSERDA Announces Release of Draft Eligibility Guidelines to Advance Zero-Emission School Bus Environmental Bond Act Investments </a>
+                </td>
+                <td>Aug 03, 2023</td>
+                <td>NYSERDA</td>
+            </tr>
+        
+            <tr class="filter-archive-table-row">
+                
+                <td>
+                    <a href="https://dec.ny.gov/news/press-releases/2023/8/new-york-state-announces-rescheduled-north-country-bond-act-listening-session-aug-11-at-harrietstown-town-hall" class="filter-archive-link">New York State Announces Rescheduled North Country Bond Act Listening Session Aug. 11 at Harrietstown Town Hall </a>
+                </td>
+                <td>Aug 01, 2023</td>
+                <td>Department of Environmental Conservation (DEC)</td>
+            </tr>
+        
+            <tr class="filter-archive-table-row">
+                
+                <td>
+                    <a href="https://www.governor.ny.gov/news/after-devastating-flooding-governor-hochul-extends-application-deadline-more-500-million" class="filter-archive-link">After Devastating Flooding, Governor Hochul Extends Application Deadline for More Than $500 Million in Resiliency-Related Grants </a>
+                </td>
+                <td>Jul 17, 2023</td>
+                <td>Governor</td>
+            </tr>
+        
+            <tr class="filter-archive-table-row">
+                
+                <td>
+                    <a href="https://dec.ny.gov/news/press-releases/2023/7/new-york-state-announces-postponement-of-north-country-bond-act-listening-session" class="filter-archive-link">New York State Announces Postponement of North Country Bond Act Listening Session </a>
+                </td>
+                <td>Jul 13, 2023</td>
+                <td>Department of Environmental Conservation (DEC)</td>
+            </tr>
+        
+            <tr class="filter-archive-table-row">
+                
+                <td>
+                    <a href="https://www.governor.ny.gov/news/governor-hochul-kicks-clean-water-clean-air-and-green-jobs-environmental-bond-act-listening" class="filter-archive-link">Governor Hochul Kicks Off Clean Water, Clean Air and Green Jobs Environmental Bond Act Listening Tour </a>
+                </td>
+                <td>May 30, 2023</td>
+                <td>Governor</td>
+            </tr>
+        
+            <tr class="filter-archive-table-row">
+                
+                <td>
+                    <a href="https://www.governor.ny.gov/news/governor-hochul-announces-five-additional-listening-sessions-advance-clean-water-clean-air-0" class="filter-archive-link">Governor Hochul Announces Five Additional Listening Sessions to Advance Clean Water, Clean Air, and Green Jobs Environmental Bond Act </a>
+                </td>
+                <td>May 23, 2023</td>
+                <td>Governor</td>
+            </tr>
+        
+            <tr class="filter-archive-table-row">
+                
+                <td>
+                    <a href="https://www.governor.ny.gov/news/governor-hochul-launches-statewide-listening-tour-advance-clean-water-clean-air-and-green-jobs" class="filter-archive-link">Governor Hochul Launches Statewide Listening Tour to Advance Clean Water, Clean Air and Green Jobs Environmental Bond Act </a>
+                </td>
+                <td>Apr 17, 2023</td>
+                <td>Governor</td>
+            </tr>
+        
+            <tr class="filter-archive-table-row">
+                
+                <td>
+                    <a href="https://www.governor.ny.gov/news/governor-hochul-announces-425-million-grants-critical-water-infrastructure-projects-statewide" class="filter-archive-link">Governor Hochul Announces $425 Million in Grants for Critical Water Infrastructure Projects Statewide </a>
+                </td>
+                <td>Apr 17, 2023</td>
+                <td>Governor</td>
+            </tr>
+        
+            <tr class="filter-archive-table-row">
+                
+                <td>
+                    <a href="https://efc.ny.gov/news/efc-announces-draft-eligibility-guidelines-advance-environmental-bond-act-investments" class="filter-archive-link">EFC Announces Draft Eligibility Guidelines to Advance Environmental Bond Act Investments </a>
+                </td>
+                <td>Mar 15, 2023</td>
+                <td>Environmental Facilities Corporation (EFC)</td>
+            </tr>
+        
+            <tr class="filter-archive-table-row">
+                
+                <td>
+                    <a href="https://www.governor.ny.gov/news/governor-hochul-announces-600-million-grants-available-water-infrastructure-and-resiliency" class="filter-archive-link">Governor Hochul Announces $600 Million In Grants Available for Water Infrastructure and Resiliency Projects Statewide, Outlines New Resilient New York Agenda </a>
+                </td>
+                <td>Sep 21, 2021</td>
+                <td>Governor</td>
+            </tr>
+        
+        </tbody>
+    </table>
+</div>
+
+
+    </div>
+       <!-- global footer area -->
+<nav class="global-footer" aria-label="NYS Global Footer Menu - these are external links">
+  <img class="global-logo" src="https://static-assets.ny.gov/sites/all/themes/ny_gov/images/logo_footer.png" alt="The State of New York Logo" />
+  <ul class="global-list">
+    <li>
+      <a href="https://www.ny.gov/agencies" class="global-links">Agencies</a>
+    </li>
+    <li>
+      <a href="https://www.ny.gov/mobileapps" class="global-links">App Directory</a>
+    </li>
+    <li>
+      <a href="https://www.ny.gov/counties" class="global-links">Counties</a>
+    </li>
+    <li>
+      <a href="https://www.ny.gov/events" class="global-links">Events</a>
+    </li>
+    <li>
+      <a href="https://www.ny.gov/programs" class="global-links">Programs</a>
+    </li>
+    <li>
+      <a href="https://www.ny.gov/services" class="global-links">Services</a>
+    </li>
+    <li>
+      <a href="https://forms.office.com/pages/responsepage.aspx?id=kH3WHqj1BkO_hmis_jVtw7ZqmY3uNFlJitX6nXi7yCFUNUdSOFdOVUFQSURUUTFOUDdXT0k2SFkxOS4u" class="global-links">Contact Us</a>
+    </li>
+  </ul>
+</nav> 
+    </main>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+
+  </body>
+</html>
