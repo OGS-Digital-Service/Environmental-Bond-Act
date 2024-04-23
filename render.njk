@@ -1,7 +1,7 @@
 ---
 layout: render-layout.njk
 title: Funding Opportunities
-component: filter
+component: accordion
 ---
 {% from './_includes/_components.njk' import filtercard, card, button, stats, highlight, hero, category, accordion, backtop, stayupdated  %}
 
@@ -22,50 +22,61 @@ component: filter
 </style>
 
 
-
 {{
-    filtercard({
-        heading:"Recent News",
-        cards:[
+    accordion({
+        title:"",
+        headline:"Communities",
+        items:[
             {
-                agency:"Department of Environmental Conservation (DEC)",
-                title:"DEC Releases for Public Review and Comment Draft Eligibility Guidelines for Water Quality Improvement Project Program Grants for Municipal Stormwater Projects",
-                link:"https://dec.ny.gov/news/press-releases/2024/3/dec-releases-for-public-review-and-comment-draft-eligibility-guidelines-for-water-quality-improvement-project-program-grants-for-municipal-stormwater-projects",
-                date:"Mar 22, 2024" 
+                target:"c-one",
+                title:"Why is a minimum of 35% of the benefit of the funds being directed towards disadvantaged communities? ",
+                description:"Decades of environmental justice research has shown that certain populations—particularly low-income and communities of color—shoulder a disproportionate burden of negative environmental outcomes, such as pollution exposure and lack of access to open space. Additionally, climate change is a threat multiplier—its impacts are further exacerbated by existing stressors and vulnerabilities, adding increasing burdens to some communities. For these reasons, the Bond Act will ensure that will also see the benefits of New York State’s investments. ",
+                ctalink:"",
+                ctatext:""
+            },
+             {
+                target:"c-two",
+                title:"Which communities will be included in that designation?",
+                description:"The term ‘disadvantaged community’ comes from the State Climate Leadership and Community Protection Act, which established the State Climate Justice Working Group (CJWG) to develop criteria for identifying disadvantaged communities statewide.",
+                ctalink:"https://climate.ny.gov/disadvantaged-communities-criteria/",
+                ctatext:"State Climate Justice Working Group (CJWG) Criteria"
             },
             {
-                agency:"Environmental Facilities Corporation (EFC)",
-                title:"EFC Announces Draft Eligibility Guidelines to Launch New Green Resiliency Grant Program",
-                link:"https://efc.ny.gov/news/efc-announces-draft-eligibility-guidelines-launch-new-green-resiliency-grant-program",
-                date:"Mar 21, 2024" 
+                target:"c-two-a",
+                title:"What if my community isn’t designated as “disadvantaged”?",
+                description:"All communities statewide are eligible to apply for Bond Act funding Use the Funding Finder tool to find the best fit for a potential project.",
+                ctalink:"/pages/funding-opportunities",
+                ctatext:"Use the Funding Finder"
             },
-            {
-                agency:"Department of Agriculture and Markets",
-                title:"Department of Agriculture and Markets Advances Bond Act Funded Programs to Support Farmers and Protect New York Watersheds",
-                link:"https://agriculture.ny.gov/news/department-agriculture-and-markets-advances-bond-act-funded-programs-support-farmers-and",
-                date:"Mar 14, 2024" 
+             {
+                target:"c-three",
+                title:"How are residents across the State likely to be impacted by and see the effects of this funding in their own communities? ",
+                description:"This historic level of investment will benefit communities across the State by:
+    <ul>
+    <li>Providing the support New York needs to provide safe water to drink</li>
+    <li>Investing in critical water infrastructure</li>
+    <li>Restoring critical environmental habitats</li>
+    <li>Reducing flood risks</li>
+    <li>Preserving our outdoor spaces and local farms</li>
+    <li>Investing in climate change mitigation and adaptation projects that will reduce air pollution, lower carbon emissions</li>
+    <li>Improving the ability of New York communities to withstand the climate-driven increase in severe weather events and flooding </li>
+    </ul>
+The Bond Act will also support a substantial investment in the Clean Green Schools initiative, which will allow the program to serve more than 1,000 under-resourced public schools. ",
+                ctalink:"Clean Green Schools initiative,",
+                ctatext:"The Clean Green Schools Initiative,"
             },
-            {
-                agency:"Department of Environmental Conservation (DEC)",
-                title:"DEC Releases Environmental Bond Act Draft Eligibility Guidelines for Climate Smart Communities Grant Program Projects",
-                link:"https://dec.ny.gov/news/press-releases/2024/3/dec-releases-environmental-bond-act-draft-eligibility-guidelines-for-climate-smart-communities-grant-program-projects",
-                date:"Mar 13, 2024" 
-            },
-            {
-                agency:"Governor",
-                title:"Governor Hochul Announces Funding Now Available to Support Electric School Bus Charging Infrastructure
-published",
-                link:"https://www.governor.ny.gov/news/governor-hochul-announces-funding-now-available-support-electric-school-bus-charging",
-                date:"Mar 05, 2024" 
-            },
-            {
-                agency:"Department of Environmental Conservation (DEC)",
-                title:"DEC Releases Environmental Bond Act Draft Eligibility Guidelines to Support Planting 25 Million Trees by 2033
-published",
-                link:"https://dec.ny.gov/news/press-releases/2024/2/dec-releases-environmental-bond-act-draft-eligibility-guidelines-to-support-planting-25-million-trees-by-2033",
-                date:"Feb 13, 2024" 
+             {
+                target:"c-four",
+                title:"What jobs/labor provisions are provided in the Bond Act?",
+                description:"The Bond Act will promote job creation and ensure good-paying jobs by:
+    <ul>
+    <li>Ensuring prevailing wages are required for workers on projects funded by the Bond Act</li>
+   <li> Requiring State agencies or municipalities receiving over $25 million of Bond Act funding for projects costing more than $50 million to use apprenticeship agreements</li>
+   <li> Encouraging project labor agreements and labor peace agreements including Buy America provisions for iron and structural steel </li>
+    </ul>",
+                ctalink:"",
+                ctatext:""
             }
-            
         ]
     })
 }}
