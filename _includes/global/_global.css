@@ -181,8 +181,7 @@
     }
 
     .global-nav-links li {
-        padding: 2px 0px;
-        border-bottom: none;
+        padding: 10px 0px;
     }
 
 }
