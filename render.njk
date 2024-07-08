@@ -1,7 +1,7 @@
 ---
 layout: render-layout.njk
 title: Funding Opportunities
-component: cards
+component: filter
 ---
 {% from './_includes/_components.njk' import filtercard, card, button, stats, highlight, hero, category, accordion, backtop, stayupdated  %}
 
@@ -22,52 +22,18 @@ component: cards
 </style>
 
 
-{{
-    card({
-        heading:"Funding Available Now",
-        intro:"",
-        cards:[
-            {
-                title:"Water Quality Improvement Project Program",
-                content:"This round of available funding includes a total of at least $215 million thorough the State EPF, Clean Water Infrastructure Act (CWIA), and the Environmental Bond Act combined.",
-                link:"https://dec.ny.gov/get-involved/grant-applications/wqip-program",
-                image:"https://www.governor.ny.gov/sites/default/files/thumbnails/image/DECWatercr.gif",
-                imagealt:"a river bending amongst a pristine green landscape"
-            },
-            {
-                title:"Climate Smart Communities",
-                content:"DEC’s Climate Smart Communities Grant Program is making $22.5 million available to help municipalities take action to address climate change.",
-                link:"https://dec.ny.gov/environmental-protection/climate-change/resources-for-local-governments/grants-for-climate-action#Climate%20Smart%20Communities%20Grant%20Program",
-                image:"https://www.governor.ny.gov/sites/default/files/styles/card_overlay/public/2023-05/Climate-Smart-Community.jpg?h=1f3dd3e8&itok=uUHAvX-4&focal_point_preview_value=50x50",
-                imagealt:"solar panels"
-            },
-            {
-                title:"Green Resiliency Grants",
-                content:"To celebrate Earth Week, Governor Kathy Hochul announced $60 million is available for the inaugural round of a new Green Resiliency Grant program. ",
-                link:"https://efc.ny.gov/grg",
-                image:"https://efc.ny.gov//sites/g/files/oee1206/files/styles/wide_lead/public/media/2024/04/ralph-wilson-park-web-hero-gradient.png?h=84071268&itok=JowZUgSX%201x",
-                imagealt:"a green resiliency infrastructure program to restore ralph wilson park"
-            },
-            {
-                title:"Electric School Bus Infrastructure",
-                content:"Governor Hochul announced funding for electric school bus charging infrastructure under the New York School Bus Incentive Program.",
-                link:"https://www.nyserda.ny.gov/All-Programs/Electric-School-Buses/NY-School-Bus-Incentive-Program-Overview",
-                image:"https://www.governor.ny.gov/sites/default/files/styles/hero_wide/public/2023-09/electric-school-buses_0.jpg?h=ec45e355&itok=Gz-4qXik",
-                imagealt:"school buses"
-            }
-            
-           
-        ]
-    })
-}}
-{# 
-
 
 {{
     filtercard({
         heading:"Recent News",
         archive: false,
         cards:[
+            {
+                agency: "Department of Environmental Conservation (DEC)",
+                title:"DEC Releases Environmental Bond Act Draft Guidelines for Disadvantaged Community Investment Eligibility and Accounting",
+                link:"https://dec.ny.gov/news/press-releases/2024/5/dec-releases-environmental-bond-act-draft-guidelines-for-disadvantaged-community-investment-eligibility-and-accounting",
+                date: "May 22, 2024"
+            },
             {
                 agency: "Governor",
                 title:"Governor Hochul Announces Nearly $300 Million Investment in Climate Resiliency During Major Address at The Vatican",
@@ -254,4 +220,4 @@ published",
             
         ]
     })
-}} #}
+}}
