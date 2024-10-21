@@ -21,18 +21,27 @@ component: cards
 {% if component == "stay" %}{% include './_includes/stayupdated/_stayupdated.css'  %} {% endif %}
 </style>
 
+
 {{
     card({
-        heading:"test card heading test",
-        intro:"intro text",
+        heading:"Featured",
+        intro:"",
         cards:[
             {
-                title:"First Card a nything you puyt here",
-                content:"This is the description on the card",
-                link:"https://ny.gov",
+                title:"$60 Million Awarded to Transformational Green Infrastructure Projects ",
+                content:"Green Resiliency Grant funding will support 13 transformative green infrastructure projects across the state.",
+                link:"https://www.governor.ny.gov/news/governor-hochul-announces-60-million-awarded-transformational-green-infrastructure-projects#:~:text=Governor%20Kathy%20Hochul%20today%20announced,flood-prone%20and%20disadvantaged%20communities.",
+                image:"https://www.governor.ny.gov/sites/default/files/styles/hero_wide/public/thumbnails/image/Environment_Nature_CentralPark_NYC_hero.jpg?h=3ae694ea&itok=lj7Rr8JE",
+                imagealt:"central park in new york city showing the lake and skyline"
+            },
+            {
+                title:"DEC releases first Clean Water, Clean Air and Green Environmental Bond Act Annual Report ",
+                content:"The annual report provides an overview of the Bond Act and summary of activities that occurred during FY 23-24.",
+                link:"https://extapps.dec.ny.gov/fs/programs/BondActNYS/CWCAGJ-Environmental-Bond-Act-FY-2023-24-Annual-Report.pdf",
                 image:"https://www.governor.ny.gov/sites/default/files/2021-07/Cranberry_Lake_Forest_Preserve_1280.jpg",
                 imagealt:"cranberry lake forest preserve showing a beautiful serene view of the placid lake with trees in summer"
             }
+            
         ]
     })
 }}
